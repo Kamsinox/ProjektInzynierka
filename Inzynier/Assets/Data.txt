@@ -1,3 +1,3 @@
 <Save FileName="Staty">
-  <Coins>360</Coins>
+  <Coins>800</Coins>
 </Save>

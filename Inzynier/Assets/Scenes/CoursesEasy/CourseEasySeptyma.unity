@@ -1903,14 +1903,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: acec6fbe37e437c468246ac87c7ac7fe, type: 3}
   - {fileID: 21300000, guid: 4474ee4b3c015db46b9f63349c78b94f, type: 3}
   audioClipsSeptymaMala:
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
+  - {fileID: 8300000, guid: 3529c0077053537449e06017c5c47111, type: 3}
+  - {fileID: 8300000, guid: 3529c0077053537449e06017c5c47111, type: 3}
   spritesSeptymaWielka:
   - {fileID: 21300000, guid: d3f647396f1fa064899919abe5a158ac, type: 3}
   - {fileID: 21300000, guid: 23025820ddbf918459e75e8f28e907d2, type: 3}
   audioClipsSeptymaWielka:
-  - {fileID: 8300000, guid: acc1e71f1b4307848b06ca7c57653546, type: 3}
-  - {fileID: 8300000, guid: acc1e71f1b4307848b06ca7c57653546, type: 3}
+  - {fileID: 8300000, guid: 3fbab18b57d8b2a4da371993b418cb58, type: 3}
+  - {fileID: 8300000, guid: 3fbab18b57d8b2a4da371993b418cb58, type: 3}
   spritesOktawa: []
   audioClipsOktawa: []
 --- !u!4 &1723735155

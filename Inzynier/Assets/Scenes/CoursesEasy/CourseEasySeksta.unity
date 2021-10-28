@@ -2067,18 +2067,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 30446f484e3b4634789c09fe57c39e29, type: 3}
   - {fileID: 21300000, guid: 568900c89febb7c4f8f59eff9162b567, type: 3}
   audioClipsSekstaMala:
-  - {fileID: 8300000, guid: 585b85a57c175814dae4da9526ee3326, type: 3}
-  - {fileID: 8300000, guid: 585b85a57c175814dae4da9526ee3326, type: 3}
+  - {fileID: 8300000, guid: 5c2ba93ea560e8b48b98375ba20417ba, type: 3}
+  - {fileID: 8300000, guid: 5c2ba93ea560e8b48b98375ba20417ba, type: 3}
   spritesSekstaWielka:
   - {fileID: 21300000, guid: a1d296a9fc4c9ba4aba97f6c3172ec83, type: 3}
   - {fileID: 21300000, guid: e0075b91612daaa4f9619ebb84789869, type: 3}
   - {fileID: 21300000, guid: 6eda951178402044eb23fead1d7ea0e3, type: 3}
   - {fileID: 21300000, guid: 6bf70f9dffc582b49aa709a2382d26aa, type: 3}
   audioClipsSekstaWielka:
-  - {fileID: 8300000, guid: 1ed2c77b8b4e69b4ebaeab6e991a7223, type: 3}
-  - {fileID: 8300000, guid: 1ed2c77b8b4e69b4ebaeab6e991a7223, type: 3}
-  - {fileID: 8300000, guid: 1ed2c77b8b4e69b4ebaeab6e991a7223, type: 3}
-  - {fileID: 8300000, guid: 1ed2c77b8b4e69b4ebaeab6e991a7223, type: 3}
+  - {fileID: 8300000, guid: 66cf18a225be28044be0f1a04ce3887b, type: 3}
+  - {fileID: 8300000, guid: 66cf18a225be28044be0f1a04ce3887b, type: 3}
+  - {fileID: 8300000, guid: 66cf18a225be28044be0f1a04ce3887b, type: 3}
+  - {fileID: 8300000, guid: 66cf18a225be28044be0f1a04ce3887b, type: 3}
   spritesSeptymaMala: []
   audioClipsSeptymaMala: []
   spritesSeptymaWielka: []

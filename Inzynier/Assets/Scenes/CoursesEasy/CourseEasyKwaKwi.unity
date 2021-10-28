@@ -1520,14 +1520,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 680bc8e41e593c241bff04de071004e6, type: 3}
   - {fileID: 21300000, guid: 2927cc5f34522b14b812b225aedcd0e6, type: 3}
   audioClipsKwarta:
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
+  - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
   spritesKwinta:
   - {fileID: 21300000, guid: 66f3dda5dbccb0c4dbb0217ab9ae1817, type: 3}
   - {fileID: 21300000, guid: 98511df112d28d643aa60f6d3f83818c, type: 3}
@@ -1538,14 +1538,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d87d47b8f54d6ca4b82f4f5e8fc155ae, type: 3}
   - {fileID: 21300000, guid: 94a8f9cbc7e40d44ea0ff46a97b22965, type: 3}
   audioClipsKwinta:
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
+  - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
   spritesSekstaMala: []
   audioClipsSekstaMala: []
   spritesSekstaWielka: []

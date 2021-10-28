@@ -1606,12 +1606,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3cc46f75aab53b744b83824163ba35ee, type: 3}
   - {fileID: 21300000, guid: 70373d1e39d8fa448a6597a9a593a688, type: 3}
   audioClipsTercjaMala:
-  - {fileID: 8300000, guid: 1ed2c77b8b4e69b4ebaeab6e991a7223, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: 1ed2c77b8b4e69b4ebaeab6e991a7223, type: 3}
-  - {fileID: 8300000, guid: 61314ddaa5615324e9f9d5f713e2a390, type: 3}
-  - {fileID: 8300000, guid: acc1e71f1b4307848b06ca7c57653546, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
+  - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
+  - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
+  - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
+  - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
+  - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
+  - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
   spritesTercjaWielka:
   - {fileID: 21300000, guid: daac8791f406000459a3137cfd39c7ab, type: 3}
   - {fileID: 21300000, guid: 4e77abe195d7e394699f82074360a692, type: 3}
@@ -1620,12 +1620,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 59b04b32860661042914dc95d4baea64, type: 3}
   - {fileID: 21300000, guid: 583f3b2fe63c3254f86418ac205056ec, type: 3}
   audioClipsTercjaWielka:
-  - {fileID: 8300000, guid: 585b85a57c175814dae4da9526ee3326, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: 585b85a57c175814dae4da9526ee3326, type: 3}
-  - {fileID: 8300000, guid: acc1e71f1b4307848b06ca7c57653546, type: 3}
-  - {fileID: 8300000, guid: c6303407b90aa374bade6f9cb288d248, type: 3}
-  - {fileID: 8300000, guid: 585b85a57c175814dae4da9526ee3326, type: 3}
+  - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
+  - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
+  - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
+  - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
+  - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
+  - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
   spritesKwarta: []
   audioClipsKwarta: []
   spritesKwinta: []
