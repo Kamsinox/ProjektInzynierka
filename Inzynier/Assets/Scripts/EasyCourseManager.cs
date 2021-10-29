@@ -15,11 +15,13 @@ public class EasyCourseManager : MonoBehaviour
     [SerializeField] TMP_Text courseProgessText; //gdzie będzie pokazywany postęp kursu
 
     [Space]
+    public int addHowManyPoints;    //ile punktów dostanie się za poprawną odpowiedź
     public GameObject textWrong; // tekst który wyświetla komunikat, przy błędnej odpowiedzi
         
     [Space]
     public GameObject endLevel;  // ostani ekran / podsumowanie
     [SerializeField] TMP_Text finalScoreText;   // gdzie wyświetlany będzie wynik
+
     
 
 
@@ -352,10 +354,11 @@ public class EasyCourseManager : MonoBehaviour
         if (!ifPrevWasWrong) 
         {
             goodAnswers++;
-            finalScore = finalScore + 10;
+            finalScore = finalScore + addHowManyPoints;
         }
         else ifPrevWasWrong = false;
     }
+
 
     public void SetScoreText(TMP_Text textMesh, int score)
     {
