@@ -795,7 +795,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 356825199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4a1cc8b3a89d645b0a4e832cfd3c6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 147cd6e3e34eb484ab64ad4a49cc24c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &356825202
@@ -1589,7 +1589,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1433479238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d44d5e2e67b27b04588550268503609f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0718c12b507cd394d8c860f1ddeb1e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spritesPryma: []
@@ -1599,12 +1599,12 @@ MonoBehaviour:
   spritesSekundaWielka: []
   audioClipsSekundaWielka: []
   spritesTercjaMala:
-  - {fileID: 21300000, guid: b74ad0f521e56f247b09d7d443652f6e, type: 3}
-  - {fileID: 21300000, guid: 5313a2c58506b6944bed14e7cfd723ea, type: 3}
   - {fileID: 21300000, guid: d612d410a53e6c144b2513a8d32d88da, type: 3}
   - {fileID: 21300000, guid: 35efe491869e032418ef0be5f76e30be, type: 3}
-  - {fileID: 21300000, guid: 3cc46f75aab53b744b83824163ba35ee, type: 3}
+  - {fileID: 21300000, guid: b74ad0f521e56f247b09d7d443652f6e, type: 3}
+  - {fileID: 21300000, guid: 5313a2c58506b6944bed14e7cfd723ea, type: 3}
   - {fileID: 21300000, guid: 70373d1e39d8fa448a6597a9a593a688, type: 3}
+  - {fileID: 21300000, guid: 3cc46f75aab53b744b83824163ba35ee, type: 3}
   audioClipsTercjaMala:
   - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
   - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
@@ -1613,12 +1613,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
   - {fileID: 8300000, guid: 12f82f904d5272f46a134f5e17a69bda, type: 3}
   spritesTercjaWielka:
-  - {fileID: 21300000, guid: daac8791f406000459a3137cfd39c7ab, type: 3}
   - {fileID: 21300000, guid: 4e77abe195d7e394699f82074360a692, type: 3}
-  - {fileID: 21300000, guid: 8e3feb3a7c4839d499e397c99a869e2d, type: 3}
   - {fileID: 21300000, guid: a7a93ed2d0d6bb54e82fb8c7903b3fa1, type: 3}
   - {fileID: 21300000, guid: 59b04b32860661042914dc95d4baea64, type: 3}
   - {fileID: 21300000, guid: 583f3b2fe63c3254f86418ac205056ec, type: 3}
+  - {fileID: 21300000, guid: daac8791f406000459a3137cfd39c7ab, type: 3}
+  - {fileID: 21300000, guid: 8e3feb3a7c4839d499e397c99a869e2d, type: 3}
   audioClipsTercjaWielka:
   - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
   - {fileID: 8300000, guid: 4616250b4249c374a800eaf1374134d7, type: 3}
@@ -1648,7 +1648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433479238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 368.69904, y: 208.3469, z: -45.60642}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

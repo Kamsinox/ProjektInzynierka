@@ -46,12 +46,13 @@ public class EasyCourseManager : MonoBehaviour
         levelManager();
         loadByXML();
         
-        Debug.Log("wybrano kurs nr: " + ManagerScenes.currentCourse);
+        Debug.Log("wybrano kurs nr: " + ChooseEasyCourse.currentCourse);
         
         // dos = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_3.png", typeof(Sprite));
         // uno = Resources.Load <Sprite> ("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_1.png");
     }
 
+    #region XMLFun
     private PlayerStats save()
     {
         PlayerStats stats = new PlayerStats();
@@ -112,6 +113,7 @@ public class EasyCourseManager : MonoBehaviour
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
     }
+    #endregion
 
     private void setHighScore(int currentCourse, int currentScore)
     {
@@ -350,29 +352,9 @@ public class EasyCourseManager : MonoBehaviour
         if (!ifPrevWasWrong) 
         {
             goodAnswers++;
-            finalScore = finalScore + 20;
+            finalScore = finalScore + 10;
         }
         else ifPrevWasWrong = false;
-
-        //przydzielanie punktów
-        //jeżeli poprzednia odpowiedź była zła to brak
-        //jeżeli dobra odpowiedź to +20 pkt.
-        //jeżeli dobra odpowiedź już była +5 pkt.
-
-        /*if (!ifPrevWasWrong)
-        {
-            goodAnswers++;
-
-            if (goodAnswersMax < goodAnswers)
-            {
-                finalScore = finalScore + 20;
-            }
-            else
-            {
-                finalScore = finalScore + 5;
-            }
-        }
-        else ifPrevWasWrong = false;*/
     }
 
     public void SetScoreText(TMP_Text textMesh, int score)

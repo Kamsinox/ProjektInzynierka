@@ -361,7 +361,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 270913856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d44d5e2e67b27b04588550268503609f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0718c12b507cd394d8c860f1ddeb1e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spritesPryma:
@@ -416,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270913856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 368.69904, y: 208.3469, z: -45.60642}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476181875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4a1cc8b3a89d645b0a4e832cfd3c6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 147cd6e3e34eb484ab64ad4a49cc24c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1476181878

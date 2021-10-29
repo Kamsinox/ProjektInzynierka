@@ -1,27 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class ManagerScenes : MonoBehaviour
+public class ChooseEasyCourse : MonoBehaviour
 {
     public static int currentCourse = 0;
  
     #region loadScenes
-    public void loadSceneKursEasyChoose()
-    {
-        SceneManager.LoadScene(sceneName:"CourseEasyChoose");
-    }
-    public void loadSceneMenuChoose()
-    {
-        SceneManager.LoadScene(sceneName:"MenuChoose");
-    }
-    public void loadProfile()
-    {
-        SceneManager.LoadScene(sceneName:"Profil");
-    }
-
-    //wybór kursu
     public void loadSceneKursEasy1()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyPryOkt");
@@ -78,5 +63,4 @@ public class ManagerScenes : MonoBehaviour
         GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Septyma \n mała i wielka";
     }
     #endregion
-    
 }

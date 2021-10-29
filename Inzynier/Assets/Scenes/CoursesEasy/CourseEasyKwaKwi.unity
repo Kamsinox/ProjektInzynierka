@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 1341493170}
     - target: {fileID: 107221097318825815, guid: 136a5cb741b0edb4f8fd55bb6e3b3947, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: playOktawa
+      value: playKwinta
       objectReference: {fileID: 0}
     - target: {fileID: 107221097318825815, guid: 136a5cb741b0edb4f8fd55bb6e3b3947, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1341493169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d44d5e2e67b27b04588550268503609f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0718c12b507cd394d8c860f1ddeb1e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spritesPryma: []
@@ -1516,9 +1516,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ccd8f0cc0c09f5b43a046e23a5e5eeba, type: 3}
   - {fileID: 21300000, guid: b8b65415ba6144c48bcd96b023e5b2b9, type: 3}
   - {fileID: 21300000, guid: d428b5904e0a99e4d9e35551a4227750, type: 3}
+  - {fileID: 21300000, guid: 2927cc5f34522b14b812b225aedcd0e6, type: 3}
   - {fileID: 21300000, guid: d601720fd4e89f8418fb40aa58a4129a, type: 3}
   - {fileID: 21300000, guid: 680bc8e41e593c241bff04de071004e6, type: 3}
-  - {fileID: 21300000, guid: 2927cc5f34522b14b812b225aedcd0e6, type: 3}
   audioClipsKwarta:
   - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
   - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
@@ -1529,14 +1529,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
   - {fileID: 8300000, guid: f1c0250862c12ea45a335e7d01442261, type: 3}
   spritesKwinta:
-  - {fileID: 21300000, guid: 66f3dda5dbccb0c4dbb0217ab9ae1817, type: 3}
   - {fileID: 21300000, guid: 98511df112d28d643aa60f6d3f83818c, type: 3}
-  - {fileID: 21300000, guid: 211a413c032472f43beacb5a0fe35daf, type: 3}
   - {fileID: 21300000, guid: 3d9509d948a72f645882c592b2a6c5c8, type: 3}
   - {fileID: 21300000, guid: be77441fb02f35744b83922327ae1885, type: 3}
   - {fileID: 21300000, guid: ad7defbb6a4ab134595c048ebe7e50a0, type: 3}
-  - {fileID: 21300000, guid: d87d47b8f54d6ca4b82f4f5e8fc155ae, type: 3}
+  - {fileID: 21300000, guid: 211a413c032472f43beacb5a0fe35daf, type: 3}
   - {fileID: 21300000, guid: 94a8f9cbc7e40d44ea0ff46a97b22965, type: 3}
+  - {fileID: 21300000, guid: 66f3dda5dbccb0c4dbb0217ab9ae1817, type: 3}
+  - {fileID: 21300000, guid: d87d47b8f54d6ca4b82f4f5e8fc155ae, type: 3}
   audioClipsKwinta:
   - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
   - {fileID: 8300000, guid: 829879344beabc6489cf0615c4ed039a, type: 3}
@@ -1617,7 +1617,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396006464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4a1cc8b3a89d645b0a4e832cfd3c6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 147cd6e3e34eb484ab64ad4a49cc24c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1396006467
@@ -2161,7 +2161,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1396006466}
-        m_TargetAssemblyTypeName: ChangeSceneManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
         m_MethodName: loadSceneMenuChoose
         m_Mode: 1
         m_Arguments:
@@ -2315,7 +2315,7 @@ PrefabInstance:
       objectReference: {fileID: 1341493170}
     - target: {fileID: 107221097318825815, guid: 136a5cb741b0edb4f8fd55bb6e3b3947, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: playPryma
+      value: playKwarta
       objectReference: {fileID: 0}
     - target: {fileID: 107221097318825815, guid: 136a5cb741b0edb4f8fd55bb6e3b3947, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

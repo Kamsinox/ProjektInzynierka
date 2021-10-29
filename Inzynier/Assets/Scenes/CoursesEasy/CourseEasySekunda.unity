@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1056922503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4a1cc8b3a89d645b0a4e832cfd3c6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 147cd6e3e34eb484ab64ad4a49cc24c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1056922505
@@ -1849,16 +1849,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1625544854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d44d5e2e67b27b04588550268503609f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0718c12b507cd394d8c860f1ddeb1e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spritesPryma: []
   audioClipsPryma: []
   spritesSekundaMala:
   - {fileID: 21300000, guid: b297994cf819e4c4c8d82290b53b315d, type: 3}
-  - {fileID: 21300000, guid: e7fc50addcf663241a53d6725f48f2d3, type: 3}
   - {fileID: 21300000, guid: 45956c2b62afdbd4b8d366428d2e0a44, type: 3}
   - {fileID: 21300000, guid: 162aa38942a7e524d8f198a7cfdacf7c, type: 3}
+  - {fileID: 21300000, guid: e7fc50addcf663241a53d6725f48f2d3, type: 3}
   audioClipsSekundaMala:
   - {fileID: 8300000, guid: fa7430a80b27597428808cdc1df89151, type: 3}
   - {fileID: 8300000, guid: fa7430a80b27597428808cdc1df89151, type: 3}
@@ -1912,7 +1912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625544854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 368.69904, y: 208.3469, z: -45.60642}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

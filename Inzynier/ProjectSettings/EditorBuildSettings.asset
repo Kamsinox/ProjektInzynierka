@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MenuChoose.unity
     guid: c8ef176f6198db8409855ef9ef9413a6
@@ -35,4 +35,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseCourse/CourseEasyChoose.unity
     guid: 630c5d16ae913ac43a060ff63cb42b31
+  - enabled: 1
+    path: Assets/Scenes/ChooseCourse/CourseNormalChoose.unity
+    guid: acc2c367330fc7b4ea8a61aafc0d0821
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalKwaKwi.unity
+    guid: dfdcadf46f4380b48a51138b9d41ea49
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalKwintaSeksta.unity
+    guid: f81dd27ed202c2343b31d174333dfbaf
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalPrymaSekunda.unity
+    guid: d93a1f93ad4571549abd5b662db2db32
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalSeksta.unity
+    guid: 30e2685b04076b64fa1ba5f25c01cb2b
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalSekunda.unity
+    guid: e588053dc07913842bd9746556afb64b
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalSeptyma.unity
+    guid: 18e7e22d03e118f42ba3d2dedda4338d
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalSeptymaOktawa.unity
+    guid: e9cad3f5e7280b24d96491dc76ef5bd1
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalTercja.unity
+    guid: aa48cacc9becc9c4aa9304f532e54376
+  - enabled: 1
+    path: Assets/Scenes/CoursesNormal/CourseNormalTercjaKwarta.unity
+    guid: 2860f36f4040bed4cbe290c5b9675c64
   m_configObjects: {}
