@@ -11,4 +11,8 @@ public class MenusManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"CourseNormalChoose");
     }
+    public void loadSceneKursHardChoose()
+    {
+        SceneManager.LoadScene(sceneName:"CourseHardChoose");
+    }
 }

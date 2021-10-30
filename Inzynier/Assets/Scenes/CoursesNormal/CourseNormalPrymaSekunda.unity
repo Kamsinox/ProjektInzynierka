@@ -383,7 +383,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3790cbc45a75c144b83d3e1891cbd821, type: 3}
   - {fileID: 21300000, guid: 3790cbc45a75c144b83d3e1891cbd821, type: 3}
   - {fileID: 21300000, guid: 3790cbc45a75c144b83d3e1891cbd821, type: 3}
+  - {fileID: 21300000, guid: 3790cbc45a75c144b83d3e1891cbd821, type: 3}
   audioClipsSekundaMala:
+  - {fileID: 8300000, guid: fa7430a80b27597428808cdc1df89151, type: 3}
   - {fileID: 8300000, guid: fa7430a80b27597428808cdc1df89151, type: 3}
   - {fileID: 8300000, guid: fa7430a80b27597428808cdc1df89151, type: 3}
   - {fileID: 8300000, guid: fa7430a80b27597428808cdc1df89151, type: 3}
@@ -394,17 +396,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
   - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
   - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
-  - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
-  - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
-  - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
-  - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
-  - {fileID: 21300000, guid: b0c3cf7243f04714db08e84d221deb99, type: 3}
   audioClipsSekundaWielka:
-  - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
-  - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
-  - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
-  - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
-  - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
   - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
   - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
   - {fileID: 8300000, guid: 9116ccc246c96e44086977c25deabfd9, type: 3}
@@ -1468,9 +1460,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
+  - {fileID: 148698594}
   - {fileID: 54302936}
   - {fileID: 1841048750}
-  courseLength: 5
+  courseLength: 6
   courseProgessText: {fileID: 231355716}
   addHowManyPoints: 10
   textWrong: {fileID: 1404656802}
