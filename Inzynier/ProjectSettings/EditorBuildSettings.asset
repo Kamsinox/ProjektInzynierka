@@ -65,4 +65,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CoursesNormal/CourseNormalTercjaKwarta.unity
     guid: 2860f36f4040bed4cbe290c5b9675c64
+  - enabled: 1
+    path: Assets/Scenes/ChooseCourse/CourseHardChoose.unity
+    guid: 0a505e302dc2c6848a0d3366eadfbbe9
+  - enabled: 1
+    path: Assets/Scenes/CoursesHard/CourseHard1.unity
+    guid: fd8ff5af8c15b0a4f8e8e0a7101a29a1
+  - enabled: 1
+    path: Assets/Scenes/CoursesHard/CourseHard2.unity
+    guid: 346bab9fc9f97224fb34edec2eb18bb7
+  - enabled: 1
+    path: Assets/Scenes/CoursesHard/CourseHard3.unity
+    guid: 2a94f8221f4b3be44837114be42d6bbd
   m_configObjects: {}
