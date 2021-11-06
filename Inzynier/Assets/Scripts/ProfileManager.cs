@@ -4,10 +4,14 @@ using TMPro;
 using UnityEngine;
 using System.Xml;
 using System.IO;
+using UnityEngine.UI;
 
 public class ProfileManager : MonoBehaviour
 {
     private string text;
+    public GameObject[] profileSprite;
+
+    [Space]
     [SerializeField] TMP_Text scoreTxt;
     void Start()
     {
@@ -28,4 +32,17 @@ public class ProfileManager : MonoBehaviour
             scoreTxt.text = string.Format("Monety: {0}",(text));
         }
     }
+
+
+    public void changeProfile()
+    {
+        Image oldProfile = GameObject.Find("ProfileImage").GetComponent<Image>();
+        Debug.Log("Stary profil: " + oldProfile);
+        Image newProfile = profileSprite[1].GetComponent<Image>();
+        Debug.Log("Nowy profil: " + newProfile);
+
+        oldProfile.sprite = newProfile.sprite;
+
+    }
+        
 }
