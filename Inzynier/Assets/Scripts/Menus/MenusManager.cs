@@ -19,4 +19,8 @@ public class MenusManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"CourseHardcoreChoose");
     }
+    public void loadSceneFreePlay()
+    {
+        SceneManager.LoadScene(sceneName:"FreePlay");
+    }
 }
