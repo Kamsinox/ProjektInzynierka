@@ -37,12 +37,9 @@ public class ProfileManager : MonoBehaviour
     public void changeProfile()
     {
         Image oldProfile = GameObject.Find("ProfileImage").GetComponent<Image>();
-        Debug.Log("Stary profil: " + oldProfile);
         Image newProfile = profileSprite[1].GetComponent<Image>();
-        Debug.Log("Nowy profil: " + newProfile);
 
         oldProfile.sprite = newProfile.sprite;
-
     }
         
 }
