@@ -46,7 +46,6 @@ public class EasyCourseManager : MonoBehaviour
         courseProgess = 0;
         loadListOfLevels();
         levelManager();
-        loadByXML();
         
         Debug.Log("wybrano kurs nr: " + ChooseEasyCourse.currentCourse);
         
@@ -55,45 +54,52 @@ public class EasyCourseManager : MonoBehaviour
     }
 
     #region XMLFun
-    private PlayerStats save()
+    /*private PlayerStats save()
     {
         PlayerStats stats = new PlayerStats();
 
         stats.coins = coinsAll;
 
         return stats;
-    }
+    }*/
 
 
     private void saveByXML()
     {
-        PlayerStats stats = save();
         XmlDocument xmlDocument = new XmlDocument();
+        string filePath = Application.dataPath + "/Data.txt";
 
-        #region Create XMLDocument Element
-        XmlElement root = xmlDocument.CreateElement("Save");
-        root.SetAttribute("FileName", "Staty");
-
-        //zapisywanie monet do XML
-        XmlElement coinsElement = xmlDocument.CreateElement("Coins");
-        coinsAll += finalScore;
-        coinsElement.InnerText = coinsAll.ToString();
-        root.AppendChild(coinsElement);
-
-        //zapisanie highscore
-
-        #endregion
-
-        xmlDocument.AppendChild(root);
-        xmlDocument.Save(Application.dataPath + "/Data.txt");
-
-        if(File.Exists(Application.dataPath + "/Data.txt"))
+        if(File.Exists(filePath))
         {
-            Debug.Log("XML FILE SAVED" + Application.dataPath);
+            xmlDocument.Load(filePath);
+
+            //pobieramy node (jako że "node" jest podstawą, a "element" jest elementem "nodea")
+            //szukamy po tagu "Coins"
+            XmlNodeList coins = xmlDocument.GetElementsByTagName("Coins");
+
+            //tutaj szukamy po tagu "AllCoins"
+            XmlNodeList allCoins = xmlDocument.GetElementsByTagName("AllCoins");
+
+            //wybieramy pierwszy element z listy coins (jako że jest tylko jeden więc tylko 0)
+            //i podstawaimy tą wartość pod inta żeby...
+            int licznik = int.Parse(coins[0].InnerText);
+            int licznik2 = int.Parse(allCoins[0].InnerText);
+
+            //.. móc potem dodać nasz wynik do niego...
+            licznik += finalScore;
+            licznik2 += finalScore;
+            
+            //... i zapisać nowy wynik z powrotem do pliku do naszego wybranego elementu
+            coins[0].InnerText = licznik.ToString();
+            allCoins[0].InnerText = licznik2.ToString();
+
+            xmlDocument.Save(filePath);
+
         }
+        else Debug.Log("FILE NOT SAVED" + filePath);
     }
 
-    private void loadByXML()
+    /*private void loadByXML()
     {
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))
@@ -105,16 +111,14 @@ public class EasyCourseManager : MonoBehaviour
 
             #region Get data from file
             //load ilość monet
-            XmlNodeList coins = xmlDocument.GetElementsByTagName("Coins");
-            coinsAll = int.Parse(coins[0].InnerText);
+            XmlNodeList coinsy = xmlDocument.GetElementsByTagName("Coins");
+            coinsAll = int.Parse(coinsy[0].InnerText);
             stats.coins = coinsAll;
-
-            //load highcores
             #endregion
 
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
-    }
+    }*/
     #endregion
 
     private void setHighScore(int currentCourse, int currentScore)
@@ -210,7 +214,6 @@ public class EasyCourseManager : MonoBehaviour
         {
             //wyszukiwanie wszystkich nazw poziomów w kursie
             levelNames.Add(levels[i].name);
-            //Debug.Log(i + ". Znalazlem taki obiekt: " + levelNames[i]);
         }
     }
 
@@ -326,9 +329,6 @@ public class EasyCourseManager : MonoBehaviour
             levels[previousLevelId].SetActive(false);
             courseProgessText.text = null;
 
-            //int y = ChangeSceneManager.currentCourse;
-            //setHighScore(y, goodAnswers);
-
             //wyświetlanie wyniku
             SetScoreText(finalScoreText, finalScore);
             saveByXML();
@@ -362,12 +362,14 @@ public class EasyCourseManager : MonoBehaviour
 
     public void SetScoreText(TMP_Text textMesh, int score)
     {
-        textMesh.text = string.Format("Twój wynik: {0}/{1} \n Otrzymujesz + {2} monet", (goodAnswers), (courseLength), (score)); //ustawianie wyświetlania wyniku i punktów
+        //ustawianie wyświetlania wyniku i punktów
+        textMesh.text = string.Format("Twój wynik: {0}/{1} \n Otrzymujesz + {2} monet", (goodAnswers), (courseLength), (score)); 
     }
 
     public void SetProgressText(TMP_Text textMesh, int progressScore)
     {
-        textMesh.text = string.Format("{0}/{1}", (progressScore), (courseLength)); //ustawianie progressu kursu
+        //ustawianie progressu kursu
+        textMesh.text = string.Format("{0}/{1}", (progressScore), (courseLength)); 
     }
 
 }

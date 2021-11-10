@@ -9,7 +9,8 @@ using UnityEngine.UI;
 public class ProfileManager : MonoBehaviour
 {
     private string text;
-    public GameObject[] profileSprite;
+
+    public GameObject profileImage;
 
     [Space]
     [SerializeField] TMP_Text scoreTxt;
@@ -30,16 +31,24 @@ public class ProfileManager : MonoBehaviour
             XmlNodeList coins = xmlDocument.GetElementsByTagName("Coins");
             text = coins[0].InnerText.ToString();
             scoreTxt.text = string.Format("Monety: {0}",(text));
+            
+            /*
+            //może się przydać
+            foreach (TMP_Text texty in scoreTxt)
+            {
+                string newText = texty.GetComponent<TMPro.TextMeshProUGUI>().text;
+                newText = string.Format("Monety: {0}",(text));
+                texty.text = newText;
+            }
+            */
         }
     }
 
 
-    public void changeProfile()
+    public void changeProfile(Image newImage)
     {
-        Image oldProfile = GameObject.Find("ProfileImage").GetComponent<Image>();
-        Image newProfile = profileSprite[1].GetComponent<Image>();
-
-        oldProfile.sprite = newProfile.sprite;
+        Image newSprite = profileImage.GetComponent<Image>();
+        newSprite.sprite = newImage.sprite;
     }
         
 }

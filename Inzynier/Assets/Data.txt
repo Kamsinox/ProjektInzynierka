@@ -1,3 +1,4 @@
-<Save FileName="Staty">
-  <Coins>1440</Coins>
+<Save>
+  <Coins>60</Coins>
+  <AllCoins>250</AllCoins>
 </Save>

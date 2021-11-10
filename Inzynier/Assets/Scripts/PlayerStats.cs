@@ -7,5 +7,5 @@ using UnityEngine;
 public class PlayerStats
 {
     public int coins;
-    public float time;
+    public int allCoins;
 }

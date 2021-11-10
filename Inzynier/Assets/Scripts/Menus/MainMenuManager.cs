@@ -3,25 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    public GameObject[] scenes;
-
-    //kolejność w ustawianiu scen ma znaczenie (w zależności od tablicy)
-    //do przełączania pomiędzy gameobjecty w menu
-    public void loadMenuChoose()
+    public void loadSceneProfile()
     {
-        foreach(GameObject g in scenes) g.SetActive(false);
-        scenes[0].SetActive(true);
+        SceneManager.LoadScene(sceneName:"Profile");
     }
-    public void loadProfile()
-    {
-        foreach(GameObject g in scenes) g.SetActive(false);
-        scenes[1].SetActive(true);
-    }
-
-
-    //przełączanie między scenami
     public void loadSceneMenuChoose()
     {
         SceneManager.LoadScene(sceneName:"MenuChoose");
     }
+
+    /*public void loadMenuChoose()
+    {
+        //może się kiedyś przydać
+        foreach(GameObject g in scenes) g.SetActive(false);
+        scenes[0].SetActive(true);
+    }*/
 }
