@@ -421,6 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profileImage: {fileID: 474281702}
   backgroundImage: {fileID: 1463546223}
+  frameImage: {fileID: 366353630}
   scoreTxt: {fileID: 242015683}
 --- !u!4 &268244347
 Transform:
@@ -941,7 +942,7 @@ GameObject:
   - component: {fileID: 474281705}
   - component: {fileID: 474281704}
   m_Layer: 5
-  m_Name: ProfileImage1
+  m_Name: ProfileImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

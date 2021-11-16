@@ -36,6 +36,10 @@ public class XMLFile : MonoBehaviour
                 currentBackgroundElement.InnerText = "";
                 root.AppendChild(currentBackgroundElement);
 
+                XmlElement currentFrameElement = xmlDocument.CreateElement("CurrentFrame");
+                currentFrameElement.InnerText = "";
+                root.AppendChild(currentFrameElement);
+
 
             xmlDocument.AppendChild(root);
 

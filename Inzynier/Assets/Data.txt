@@ -1,6 +1,7 @@
 <Save>
-  <Coins>95</Coins>
-  <AllCoins>95</AllCoins>
-  <CurrentProfileImage>Copper Ingot</CurrentProfileImage>
-  <CurrentBackground>Stardew1</CurrentBackground>
+  <Coins>200</Coins>
+  <AllCoins>200</AllCoins>
+  <CurrentProfileImage>Cut Ruby</CurrentProfileImage>
+  <CurrentBackground>Stardew8</CurrentBackground>
+  <CurrentFrame>premium</CurrentFrame>
 </Save>
