@@ -1,4 +1,6 @@
 <Save>
-  <Coins>60</Coins>
-  <AllCoins>250</AllCoins>
+  <Coins>95</Coins>
+  <AllCoins>95</AllCoins>
+  <CurrentProfileImage>Copper Ingot</CurrentProfileImage>
+  <CurrentBackground>Stardew1</CurrentBackground>
 </Save>

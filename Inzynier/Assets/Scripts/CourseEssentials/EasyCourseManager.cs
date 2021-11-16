@@ -49,8 +49,8 @@ public class EasyCourseManager : MonoBehaviour
         
         Debug.Log("wybrano kurs nr: " + ChooseEasyCourse.currentCourse);
         
-        // dos = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_3.png", typeof(Sprite));
-        // uno = Resources.Load <Sprite> ("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_1.png");
+        //Sprite dos = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_3.png", typeof(Sprite));
+        //Sprite uno = Resources.Load <Sprite> ("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_1.png");
     }
 
     #region XMLFun

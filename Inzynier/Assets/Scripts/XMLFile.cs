@@ -20,14 +20,25 @@ public class XMLFile : MonoBehaviour
             XmlElement root = xmlDocument.CreateElement("Save");
             //root.SetAttribute("FileName", "Data");
 
-            XmlElement coinsElement = xmlDocument.CreateElement("Coins");
-            coinsElement.InnerText = "0";
-            root.AppendChild(coinsElement);
-            XmlElement allCoinsElement = xmlDocument.CreateElement("AllCoins");
-            allCoinsElement.InnerText = "0";
-            root.AppendChild(allCoinsElement);
+                XmlElement coinsElement = xmlDocument.CreateElement("Coins");
+                coinsElement.InnerText = "0";
+                root.AppendChild(coinsElement);
+                
+                XmlElement allCoinsElement = xmlDocument.CreateElement("AllCoins");
+                allCoinsElement.InnerText = "0";
+                root.AppendChild(allCoinsElement);
+
+                XmlElement currentProfileImageElement = xmlDocument.CreateElement("CurrentProfileImage");
+                currentProfileImageElement.InnerText = "";
+                root.AppendChild(currentProfileImageElement);
+
+                XmlElement currentBackgroundElement = xmlDocument.CreateElement("CurrentBackground");
+                currentBackgroundElement.InnerText = "";
+                root.AppendChild(currentBackgroundElement);
+
 
             xmlDocument.AppendChild(root);
+
             xmlDocument.Save(Application.dataPath + "/Data.txt");
 
             if(File.Exists(Application.dataPath + "/Data.txt"))
