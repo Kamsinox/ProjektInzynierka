@@ -1,7 +1,12 @@
-<Save>
-  <Coins>200</Coins>
-  <AllCoins>200</AllCoins>
-  <CurrentProfileImage>Cut Sapphire</CurrentProfileImage>
-  <CurrentBackground>Stardew2</CurrentBackground>
+<Save FileName="Data">
+  <Coins>65</Coins>
+  <AllCoins>495</AllCoins>
+  <CurrentProfileImage>Coal</CurrentProfileImage>
+  <CurrentBackground>Stardew1</CurrentBackground>
   <CurrentFrame>premium</CurrentFrame>
+  <Shop>
+    <ProfileImages>
+      <Image>Coal</Image>
+    </ProfileImages>
+  </Shop>
 </Save>

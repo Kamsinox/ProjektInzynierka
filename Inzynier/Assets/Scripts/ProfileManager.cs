@@ -1,8 +1,10 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using System.Xml;
 using System.IO;
-using UnityEngine.UI;
+
+
 
 public class ProfileManager : MonoBehaviour
 {
@@ -16,18 +18,21 @@ public class ProfileManager : MonoBehaviour
     [SerializeField] TMP_Text scoreTxt;
     void Start()
     {
-        loadScore();
-        loadProfileImage();
-        loadBackground();
-        loadFrame();
-    }
-
-    private void loadScore()
-    {
-        //ścieżka do pliku z danymi
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))
         {
+            loadScore(filePath);
+            loadProfileImage(filePath);
+            loadBackground(filePath);
+            loadFrame(filePath);
+        }
+        else Debug.Log("FILE NOT LOADED" + filePath);
+    }
+
+    private void loadScore(string filePath)
+    {
+        //ścieżka do pliku z danymi
+        
             //załadowanie pliku
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(filePath);
@@ -50,15 +55,11 @@ public class ProfileManager : MonoBehaviour
                 texty.text = newText;
             }
             */
-        }
-        else Debug.Log("FILE NOT SAVED" + filePath);
+        
     }
 
-    private void loadProfileImage()
+    private void loadProfileImage(string filePath)
     {
-        string filePath = Application.dataPath + "/Data.txt";
-        if(File.Exists(filePath))
-        {
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(filePath);
 
@@ -79,14 +80,10 @@ public class ProfileManager : MonoBehaviour
                     newSprite.sprite = (Sprite)data[i];
                 }
             }
-        }
     }
 
-    private void loadBackground()
+    private void loadBackground(string filePath)
     {
-        string filePath = Application.dataPath + "/Data.txt";
-        if(File.Exists(filePath))
-        {
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(filePath);
 
@@ -103,14 +100,10 @@ public class ProfileManager : MonoBehaviour
                     newSprite.sprite = (Sprite)data[i];
                 }
             }
-        }
     }
 
-    private void loadFrame()
+    private void loadFrame(string filePath)
     {
-        string filePath = Application.dataPath + "/Data.txt";
-        if(File.Exists(filePath))
-        {
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(filePath);
 
@@ -127,7 +120,6 @@ public class ProfileManager : MonoBehaviour
                     newSprite.sprite = (Sprite)data[i];
                 }
             }
-        }
     }
 
     public void changeProfile(Image newImage)

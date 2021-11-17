@@ -18,7 +18,7 @@ public class XMLFile : MonoBehaviour
             XmlDocument xmlDocument = new XmlDocument();
 
             XmlElement root = xmlDocument.CreateElement("Save");
-            //root.SetAttribute("FileName", "Data");
+            root.SetAttribute("FileName", "Data");
 
                 XmlElement coinsElement = xmlDocument.CreateElement("Coins");
                 coinsElement.InnerText = "0";
@@ -40,6 +40,14 @@ public class XMLFile : MonoBehaviour
                 currentFrameElement.InnerText = "";
                 root.AppendChild(currentFrameElement);
 
+                XmlElement shop = xmlDocument.CreateElement("Shop");
+                root.AppendChild(shop);
+
+                     XmlElement profileElement = xmlDocument.CreateElement("ProfileImages");
+                     shop.AppendChild(profileElement);
+
+                        // XmlElement singleprofileElement = xmlDocument.CreateElement("Image");
+                        // profileElement.AppendChild(singleprofileElement);
 
             xmlDocument.AppendChild(root);
 
