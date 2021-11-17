@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProfileMenuManager : MonoBehaviour
+public class ShopMenuManager : MonoBehaviour
 {
     public GameObject[] panele;
     public Button buttonStart;
@@ -11,7 +11,7 @@ public class ProfileMenuManager : MonoBehaviour
         buttonStart.Select();
     }
 
-    public void changePanelStats()
+    public void changePanelProflieImage()
     {
         foreach(GameObject g in panele)
         {
@@ -21,7 +21,7 @@ public class ProfileMenuManager : MonoBehaviour
         panele[0].SetActive(true);
     }
 
-    public void changePanelProflieImage()
+    public void changePanelBackground()
     {
         foreach(GameObject g in panele)
         {
@@ -31,7 +31,7 @@ public class ProfileMenuManager : MonoBehaviour
         panele[1].SetActive(true);
     }
 
-    public void changePanelBackground()
+    public void changePanelOther()
     {
         foreach(GameObject g in panele)
         {
@@ -40,26 +40,4 @@ public class ProfileMenuManager : MonoBehaviour
 
         panele[2].SetActive(true);
     }
-
-    public void changePanelOther()
-    {
-        foreach(GameObject g in panele)
-        {
-            g.SetActive(false);
-        }
-
-        panele[3].SetActive(true);
-    }
-
-    public void changePanelAchievments()
-    {
-        foreach(GameObject g in panele)
-        {
-            g.SetActive(false);
-        }
-
-        panele[4].SetActive(true);
-    }
-
-
 }
