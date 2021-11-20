@@ -1,22 +1,55 @@
 <Save FileName="Data">
-  <Coins>375</Coins>
-  <AllCoins>225</AllCoins>
-  <CurrentProfileImage>Diamond</CurrentProfileImage>
-  <CurrentBackground>Stardew1</CurrentBackground>
-  <CurrentFrame>pink</CurrentFrame>
+  <Coins>1555</Coins>
+  <AllCoins>4505</AllCoins>
+  <CurrentProfileImage>Copper Ingot</CurrentProfileImage>
+  <CurrentBackground>Stardew2</CurrentBackground>
+  <CurrentFrame>red</CurrentFrame>
+  <FreePlayNotesPlayed>27</FreePlayNotesPlayed>
   <Shop>
     <ProfileImages>
-      <Image>Copper Ingot</Image>
       <Image>Coal</Image>
-      <Image>Diamond</Image>
+      <Image>Copper Ingot</Image>
+      <Image>Crystal</Image>
     </ProfileImages>
     <Backgrounds>
       <Background>Stardew1</Background>
-      <Background>x</Background>
+      <Background>Stardew2</Background>
     </Backgrounds>
     <ProfileFrames>
+      <Frame>red</Frame>
       <Frame>pink</Frame>
-      <Frame>brown</Frame>
+      <Frame>orange</Frame>
+      <Frame>yellow</Frame>
     </ProfileFrames>
   </Shop>
+  <Highscores>
+    <EasyCourse>
+      <EasyPrymaOktawa>1</EasyPrymaOktawa>
+      <EasySekunda>3</EasySekunda>
+      <EasyTercja>0</EasyTercja>
+      <EasyKwaKwi>0</EasyKwaKwi>
+      <EasySeksta>0</EasySeksta>
+      <EasySeptyma>0</EasySeptyma>
+    </EasyCourse>
+    <NormalCourse>
+      <NormalSekunda>0</NormalSekunda>
+      <NormalTercja>0</NormalTercja>
+      <NormalKwaKwi>1</NormalKwaKwi>
+      <NormalSeksta>0</NormalSeksta>
+      <NormalSeptyma>0</NormalSeptyma>
+      <NormalPrySek>0</NormalPrySek>
+      <NormalTerKwa>0</NormalTerKwa>
+      <NormalKwiSek>0</NormalKwiSek>
+      <NormalSepOkt>0</NormalSepOkt>
+    </NormalCourse>
+    <HardCourse>
+      <HardUno>0</HardUno>
+      <HardDos>6</HardDos>
+      <HardTres>0</HardTres>
+    </HardCourse>
+    <HardcoreCourse>
+      <HardcoreIchi>0</HardcoreIchi>
+      <HardcoerNi>5</HardcoerNi>
+    </HardcoreCourse>
+  </Highscores>
 </Save>

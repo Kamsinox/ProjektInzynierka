@@ -5,6 +5,11 @@ using TMPro;
 public class ChooseNormalCourse : MonoBehaviour
 {
     public static int currentCourse = 0;
+
+    void Start()
+    {
+        EasyCourseManager.courseID = 2;
+    }
  
     #region loadScenes
     public void loadSceneKursNormal1()
@@ -61,31 +66,31 @@ public class ChooseNormalCourse : MonoBehaviour
         GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = " ";
     }
     public void onEnter1(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalSekunda";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Sekunda";
     }
     public void onEnter2(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalTercja";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Tercja";
     }
     public void onEnter3(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalKwaKwi";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal KwaKwi";
     }
     public void onEnter4(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalSeksta";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Seksta";
     }
     public void onEnter5(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalSeptyma";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Septyma";
     }
     public void onEnter6(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalPrymaSekunda";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal PrymaSekunda";
     }
     public void onEnter7(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalTercjaKwarta";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal TercjaKwarta";
     }
     public void onEnter8(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalKwintaSeksta";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal KwintaSeksta";
     }
     public void onEnter9(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormalSeptymaOktawa";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal SeptymaOktawa";
     }
     #endregion
 }

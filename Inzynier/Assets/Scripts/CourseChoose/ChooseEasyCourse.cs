@@ -6,6 +6,11 @@ public class ChooseEasyCourse : MonoBehaviour
 {
     public static int currentCourse = 0;
  
+    void Start()
+    {
+        EasyCourseManager.courseID = 1;
+    }
+
     #region loadScenes
     public void loadSceneKursEasy1()
     {

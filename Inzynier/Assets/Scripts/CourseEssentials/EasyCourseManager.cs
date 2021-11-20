@@ -16,29 +16,32 @@ public class EasyCourseManager : MonoBehaviour
 
     [Space]
     public int addHowManyPoints;    //ile punktów dostanie się za poprawną odpowiedź
+    public int multiplier;  //mnożnik punktów
     public GameObject textWrong; // tekst który wyświetla komunikat, przy błędnej odpowiedzi
         
     [Space]
     public GameObject endLevel;  // ostani ekran / podsumowanie
     [SerializeField] TMP_Text finalScoreText;   // gdzie wyświetlany będzie wynik
 
-    
 
 
     SpirteAudioClipManager skryptSpriteAudio;
 
     // liczniki do kolejnych poziomów
     private bool ifPrevWasWrong;    //sprawdzanie czy odpowiedź była błędna
-    private int goodAnswers;    //tabela z kursami, które już zostały dobrze zrobione
+    private int goodAnswers;    //iloć poprawnych odpowiedzi
     private int courseProgess;  //liczenie progresu podczas kursu
 
-    private int coinsAll;   //licznik monet
-    private int finalScore = 0;     // obliczamy końcowy wynik jako int
+    private int finalScore;     // obliczamy końcowy wynik jako int
+    private int highscoreInt;    //  highscore w werji int
     private List<int> levelHighScores = new List<int>();    // lista najwyższych wyników
     private List<string> levelNames = new List<string>();   // przechowujemy tutaj listę złożoną z nazw poziomów
    
     private int currentLevelId;     //zapisywanie id do wyświetlenia obecnego levelu
     private int previousLevelId;    //zapisywanie poprzedniego levelu
+
+
+    public static int courseID;
 
     void Start()
     {
@@ -47,6 +50,7 @@ public class EasyCourseManager : MonoBehaviour
         loadListOfLevels();
         levelManager();
         
+        Debug.Log("wybrano kurs trunosc: " + courseID);
         Debug.Log("wybrano kurs nr: " + ChooseEasyCourse.currentCourse);
         
         //Sprite dos = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_3.png", typeof(Sprite));
@@ -54,16 +58,6 @@ public class EasyCourseManager : MonoBehaviour
     }
 
     #region XMLFun
-    /*private PlayerStats save()
-    {
-        PlayerStats stats = new PlayerStats();
-
-        stats.coins = coinsAll;
-
-        return stats;
-    }*/
-
-
     private void saveByXML()
     {
         XmlDocument xmlDocument = new XmlDocument();
@@ -98,36 +92,191 @@ public class EasyCourseManager : MonoBehaviour
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
     }
+    #endregion
 
-    /*private void loadByXML()
+    private int setFinalScore()
     {
+        finalScore = 0;
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))
         {
-            PlayerStats stats = new PlayerStats();
-
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(filePath);
 
-            #region Get data from file
-            //load ilość monet
-            XmlNodeList coinsy = xmlDocument.GetElementsByTagName("Coins");
-            coinsAll = int.Parse(coinsy[0].InnerText);
-            stats.coins = coinsAll;
-            #endregion
+            // switch w zależności który poziom trudności wybrano
+            // courseId zmieniamy podczas wyboru kursu (w skrypcie)
+            switch(courseID)
+            {
+                case 1:
+                    //w zależności od wybranego kursu ustalamy highscore
+                    switch(ChooseEasyCourse.currentCourse)
+                    {
+                        case 0:
+                            XmlNodeList highscoreEasyPryOkt = xmlDocument.GetElementsByTagName("EasyPrymaOktawa");
+                            setFinalScoreinFinalScore(highscoreEasyPryOkt);
+                        break;
 
+                        case 1:
+                            XmlNodeList highscoreEasySekunda = xmlDocument.GetElementsByTagName("EasySekunda");
+                            setFinalScoreinFinalScore(highscoreEasySekunda);
+                        break;
+
+                        case 2:
+                            XmlNodeList highscoreEasyTercja = xmlDocument.GetElementsByTagName("EasyTercja");
+                            setFinalScoreinFinalScore(highscoreEasyTercja);
+                        break;
+
+                        case 3:
+                            XmlNodeList highscoreEasyKwaKwi = xmlDocument.GetElementsByTagName("EasyKwaKwi");
+                            setFinalScoreinFinalScore(highscoreEasyKwaKwi);
+                        break;
+
+                        case 4:
+                            XmlNodeList highscoreEasySeksta = xmlDocument.GetElementsByTagName("EasySeksta");
+                            setFinalScoreinFinalScore(highscoreEasySeksta);
+                        break;
+
+                        case 5:
+                            XmlNodeList highscoreSeptyma = xmlDocument.GetElementsByTagName("EasySeptyma");
+                            setFinalScoreinFinalScore(highscoreSeptyma);
+                        break;
+              
+
+                        default:
+                            Debug.Log("Blady przy ladowaniu id kursu easy");
+                        break;
+                    }
+                    break;
+
+                case 2: 
+                    switch(ChooseNormalCourse.currentCourse)
+                    {
+                        case 1:
+                            XmlNodeList highscoreNormalSek = xmlDocument.GetElementsByTagName("NormalSekunda");
+                            setFinalScoreinFinalScore(highscoreNormalSek);
+                        break;
+
+                        case 2:
+                            XmlNodeList highscoreNormalTer = xmlDocument.GetElementsByTagName("NormalTercja");
+                            setFinalScoreinFinalScore(highscoreNormalTer);
+                        break;
+
+                        case 3:
+                            XmlNodeList highscoreNormalKwaKwi = xmlDocument.GetElementsByTagName("NormalKwaKwi");
+                            setFinalScoreinFinalScore(highscoreNormalKwaKwi);
+                        break;
+
+                        case 4:
+                            XmlNodeList highscoreNormalSeksta = xmlDocument.GetElementsByTagName("NormalSeksta");
+                            setFinalScoreinFinalScore(highscoreNormalSeksta);
+                        break;
+
+                        case 5:
+                            XmlNodeList highscoreNormalSep = xmlDocument.GetElementsByTagName("NormalSeptyma");
+                            setFinalScoreinFinalScore(highscoreNormalSep);
+                        break;
+
+                        case 6:
+                            XmlNodeList highscoreNormalPrySek = xmlDocument.GetElementsByTagName("NormalPrySek");
+                            setFinalScoreinFinalScore(highscoreNormalPrySek);
+                        break;
+
+                        case 7:
+                            XmlNodeList highscoreNormalTerKwa = xmlDocument.GetElementsByTagName("NormalTerKwa");
+                            setFinalScoreinFinalScore(highscoreNormalTerKwa);
+                        break;
+
+                        case 8:
+                            XmlNodeList highscoreNormalKwiSek = xmlDocument.GetElementsByTagName("NormalKwiSek");
+                            setFinalScoreinFinalScore(highscoreNormalKwiSek);
+                        break;
+
+                        case 9:
+                            XmlNodeList highscoreNormalSepOpt = xmlDocument.GetElementsByTagName("NormalSepOkt");
+                            setFinalScoreinFinalScore(highscoreNormalSepOpt);
+                        break;
+
+                        default:
+                            Debug.Log("Blady przy ladowaniu id kursu normal");
+                        break;
+
+                    }
+                    break;
+
+                case 3:
+                    switch(ChooseHardCourse.currentCourse)
+                    {
+                        case 0:
+                            XmlNodeList highscoreHard1 = xmlDocument.GetElementsByTagName("HardUno");
+                            setFinalScoreinFinalScore(highscoreHard1);
+                        break;
+
+                        case 1:
+                            XmlNodeList highscoreHard2 = xmlDocument.GetElementsByTagName("HardDos");
+                            setFinalScoreinFinalScore(highscoreHard2);
+                        break;
+
+                        case 2:
+                            XmlNodeList highscoreHard3 = xmlDocument.GetElementsByTagName("HardTres");
+                            setFinalScoreinFinalScore(highscoreHard3);
+                        break;
+
+                        default:
+                            Debug.Log("Blady przy ladowaniu id kursu hard");
+                        break;
+                    }
+                break;
+
+                case 4:
+                    switch(ChooseHardcoreCourse.currentCourse)
+                    {
+                        case 0:
+                            XmlNodeList highscoreHardcore1 = xmlDocument.GetElementsByTagName("HardcoreIchi");
+                            setFinalScoreinFinalScore(highscoreHardcore1);
+                        break;
+
+                        case 1:
+                            XmlNodeList highscoreHardcore2 = xmlDocument.GetElementsByTagName("HardcoerNi");
+                            setFinalScoreinFinalScore(highscoreHardcore2);
+                        break;
+
+                        default:
+                            Debug.Log("Blady przy ladowaniu id kursu hardcore");
+                        break;
+                    }
+                break;
+
+                default: 
+                    Debug.Log("Blad przy ladowaniu idTrudnosci kursu"); 
+                break;
+            }
+
+            xmlDocument.Save(filePath);
         }
-        else Debug.Log("FILE NOT SAVED" + filePath);
-    }*/
-    #endregion
+        else Debug.Log("FILE NOT SAVED przy finalScore" + filePath);
 
-    private void setHighScore(int currentCourse, int currentScore)
+        return finalScore;    
+    }
+
+    private void setFinalScoreinFinalScore(XmlNodeList nodeList)
     {
-        if(currentScore > levelHighScores[currentCourse])
+        //ustawiamy highscore z pliku XML
+        highscoreInt = int.Parse(nodeList[0].InnerText.ToString());
+
+        //jeżeli liczba poprawnych odpowiedzi będzie większa od rekordu
+        if(goodAnswers > highscoreInt)
         {
-            levelHighScores[currentCourse] = currentScore;
+        // finał = (rekord * ilePunktówZaPorawnąOdpowiedź) + ((ilośćPoprawnychOdp - rekord) * ilePZPO * mnożnikPunktów);
+        // np. rekord = 4, poprawneodpowiedzi = 5, mnożnik=3, ilePZPO=10
+        // finał = (4 * 10) + (5 - 4) * 10 * 3
+        // finał = 40 + 30
+        // finał = 70
+        finalScore = (highscoreInt * addHowManyPoints) + ((goodAnswers - highscoreInt) * addHowManyPoints * multiplier);
+        nodeList[0].InnerText = goodAnswers.ToString();
         }
-        Debug.Log("Max dla kursu: "+currentScore+" wynosi: "+levelHighScores[currentCourse]);
+
+        //jeżeli liczba poprawnych odpowiedzi będzie mniejsza lub równa rekordowi
+        else finalScore = goodAnswers * addHowManyPoints;
     }
 
 
@@ -219,9 +368,6 @@ public class EasyCourseManager : MonoBehaviour
 
     private void showLevel(int i)
     {
-        //Debug.Log("W momencie wywoływania manager level currentLevel to: " + currentLevel);
-        //Debug.Log("Dlugosc listy nazw = " + levelNames.Count);
-
         if(courseProgess != courseLength)
         {
             switch(levelNames[i])
@@ -315,7 +461,6 @@ public class EasyCourseManager : MonoBehaviour
         else if (courseProgess != courseLength)
         {
             levels[previousLevelId].SetActive(false);
-            //Debug.Log("Level nr " + currentLevel + ", wynik = " + finalScore);
             levels[currentLevelId].SetActive(true);
 
             //wyświetlanie progressu w kursie
@@ -324,13 +469,12 @@ public class EasyCourseManager : MonoBehaviour
 
         else
         {
-            //Debug.Log("Koncowy wynik = " + finalScore);
             endLevel.SetActive(true);
             levels[previousLevelId].SetActive(false);
             courseProgessText.text = null;
 
             //wyświetlanie wyniku
-            SetScoreText(finalScoreText, finalScore);
+            SetScoreText(finalScoreText, setFinalScore());
             saveByXML();
         }
     }
@@ -339,7 +483,6 @@ public class EasyCourseManager : MonoBehaviour
     {
         courseProgess++;
         scoreCount();
-        //Debug.Log("Liczba dobrych odpowiedzi: " + goodAnswers);
         levelManager();
     }
 
@@ -354,7 +497,6 @@ public class EasyCourseManager : MonoBehaviour
         if (!ifPrevWasWrong) 
         {
             goodAnswers++;
-            finalScore = finalScore + addHowManyPoints;
         }
         else ifPrevWasWrong = false;
     }

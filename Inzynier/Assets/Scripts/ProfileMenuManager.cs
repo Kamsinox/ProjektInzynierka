@@ -19,7 +19,7 @@ public class ProfileMenuManager : MonoBehaviour
     {
         buttonStart.onClick.Invoke();
         buttonStart.Select();
-        loadAllProfileImages();
+        loadAllImages();
     }
 
     #region changePanel
@@ -74,7 +74,7 @@ public class ProfileMenuManager : MonoBehaviour
     }
     #endregion
 
-    private void loadAllProfileImages()
+    private void loadAllImages()
     {
         List<string> nazwyProfil = new List<string>();
         List<string> nazwyBackgorund = new List<string>();

@@ -885,6 +885,7 @@ MonoBehaviour:
   courseLength: 6
   courseProgessText: {fileID: 500453656}
   addHowManyPoints: 10
+  multiplier: 3
   textWrong: {fileID: 1468281354}
   endLevel: {fileID: 312296066}
   finalScoreText: {fileID: 1887404568}

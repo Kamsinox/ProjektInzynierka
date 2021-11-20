@@ -6,6 +6,11 @@ public class ChooseHardcoreCourse : MonoBehaviour
 {
     public static int currentCourse = 0;
 
+    void Start()
+    {
+        EasyCourseManager.courseID = 4;
+    }
+
     #region loadScenes
     public void loadSceneKursHardcore1()
     {
