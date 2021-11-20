@@ -5,7 +5,6 @@ using System.Xml;
 using System.IO;
 
 
-
 public class ProfileManager : MonoBehaviour
 {
     private string text;
@@ -187,4 +186,5 @@ public class ProfileManager : MonoBehaviour
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
     }
+
 }

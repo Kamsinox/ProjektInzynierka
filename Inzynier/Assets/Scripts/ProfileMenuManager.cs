@@ -10,6 +10,11 @@ public class ProfileMenuManager : MonoBehaviour
 
     [Space]
     public Button[] buttonImages;
+    [Space]
+    public Button[] buttonBackgrounds;
+    [Space]
+    public Button[] buttonFrames;
+
     void Start()
     {
         buttonStart.onClick.Invoke();
@@ -71,27 +76,70 @@ public class ProfileMenuManager : MonoBehaviour
 
     private void loadAllProfileImages()
     {
-        List<string> nazwy = new List<string>();
+        List<string> nazwyProfil = new List<string>();
+        List<string> nazwyBackgorund = new List<string>();
+        List<string> nazwyFrame = new List<string>();
 
         string filePath = Application.dataPath + "/Data.txt";
         XmlDocument xmlDocument = new XmlDocument();
         xmlDocument.Load(filePath);
 
-        XmlNodeList list = xmlDocument.GetElementsByTagName("ProfileImages");
-        foreach(XmlNode x in list[0].ChildNodes)
+        #region loadProfileImages
+        XmlNodeList list1 = xmlDocument.GetElementsByTagName("ProfileImages");
+        foreach(XmlNode x in list1[0].ChildNodes)
         {
-            nazwy.Add(x.InnerText);
+            nazwyProfil.Add(x.InnerText);
         }
 
-        for(int i=0; i<nazwy.Count; i++)
+        for(int i=0; i<nazwyProfil.Count; i++)
         {
             for(int j=0; j<buttonImages.Length; j++)
             {
-                if(buttonImages[j].GetComponent<Image>().sprite.name == nazwy[i])
+                if(buttonImages[j].GetComponent<Image>().sprite.name == nazwyProfil[i])
                 {
                     buttonImages[j].interactable = true;
                 }
             }
         }
+        #endregion
+
+        #region loadBackgroundImages
+        XmlNodeList list2 = xmlDocument.GetElementsByTagName("Backgrounds");
+        foreach(XmlNode x in list2[0].ChildNodes)
+        {
+            nazwyBackgorund.Add(x.InnerText);
+        }
+
+        for(int i=0; i<nazwyBackgorund.Count; i++)
+        {
+            for(int j=0; j<buttonBackgrounds.Length; j++)
+            {
+                if(buttonBackgrounds[j].GetComponent<Image>().sprite.name == nazwyBackgorund[i])
+                {
+                    buttonBackgrounds[j].interactable = true;
+                }
+            }
+        }
+        #endregion
+
+        #region loadFrameImages
+        XmlNodeList list3 = xmlDocument.GetElementsByTagName("ProfileFrames");
+        foreach(XmlNode x in list3[0].ChildNodes)
+        {
+            nazwyFrame.Add(x.InnerText);
+        }
+
+        for(int i=0; i<nazwyFrame.Count; i++)
+        {
+            for(int j=0; j<buttonFrames.Length; j++)
+            {
+                if(buttonFrames[j].GetComponent<Image>().sprite.name == nazwyFrame[i])
+                {
+                    buttonFrames[j].interactable = true;
+                }
+            }
+        }
+        #endregion
+        
     }
 }

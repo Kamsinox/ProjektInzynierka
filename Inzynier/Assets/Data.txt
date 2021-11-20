@@ -1,12 +1,22 @@
 <Save FileName="Data">
-  <Coins>65</Coins>
-  <AllCoins>495</AllCoins>
-  <CurrentProfileImage>Coal</CurrentProfileImage>
+  <Coins>375</Coins>
+  <AllCoins>225</AllCoins>
+  <CurrentProfileImage>Diamond</CurrentProfileImage>
   <CurrentBackground>Stardew1</CurrentBackground>
-  <CurrentFrame>premium</CurrentFrame>
+  <CurrentFrame>pink</CurrentFrame>
   <Shop>
     <ProfileImages>
+      <Image>Copper Ingot</Image>
       <Image>Coal</Image>
+      <Image>Diamond</Image>
     </ProfileImages>
+    <Backgrounds>
+      <Background>Stardew1</Background>
+      <Background>x</Background>
+    </Backgrounds>
+    <ProfileFrames>
+      <Frame>pink</Frame>
+      <Frame>brown</Frame>
+    </ProfileFrames>
   </Shop>
 </Save>
