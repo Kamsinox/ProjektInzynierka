@@ -46,8 +46,11 @@ public class XMLFile : MonoBehaviour
                      XmlElement profileElement = xmlDocument.CreateElement("ProfileImages");
                      shop.AppendChild(profileElement);
 
-                        // XmlElement singleprofileElement = xmlDocument.CreateElement("Image");
-                        // profileElement.AppendChild(singleprofileElement);
+                     XmlElement backgroundElement = xmlDocument.CreateElement("Backgrounds");
+                     shop.AppendChild(backgroundElement);
+
+                     XmlElement frameElement = xmlDocument.CreateElement("ProfileFrames");
+                     shop.AppendChild(frameElement);
 
             xmlDocument.AppendChild(root);
 
