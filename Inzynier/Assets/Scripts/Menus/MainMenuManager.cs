@@ -17,10 +17,18 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene(sceneName:"Shop");
     }
 
-    /*public void loadMenuChoose()
+    public void loadMainMenu()
     {
-        //może się kiedyś przydać
-        foreach(GameObject g in scenes) g.SetActive(false);
-        scenes[0].SetActive(true);
-    }*/
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void loadSettings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
+    public void exitApp()
+    {
+        Application.Quit();
+    }
 }

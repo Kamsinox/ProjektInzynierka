@@ -1,6 +1,6 @@
 <Save FileName="Data">
-  <Coins>1555</Coins>
-  <AllCoins>4505</AllCoins>
+  <Coins>1590</Coins>
+  <AllCoins>4540</AllCoins>
   <CurrentProfileImage>Copper Ingot</CurrentProfileImage>
   <CurrentBackground>Stardew2</CurrentBackground>
   <CurrentFrame>red</CurrentFrame>
@@ -24,7 +24,7 @@
   </Shop>
   <Highscores>
     <EasyCourse>
-      <EasyPrymaOktawa>1</EasyPrymaOktawa>
+      <EasyPrymaOktawa>2</EasyPrymaOktawa>
       <EasySekunda>3</EasySekunda>
       <EasyTercja>0</EasyTercja>
       <EasyKwaKwi>0</EasyKwaKwi>
@@ -38,18 +38,18 @@
       <NormalSeksta>0</NormalSeksta>
       <NormalSeptyma>0</NormalSeptyma>
       <NormalPrySek>0</NormalPrySek>
-      <NormalTerKwa>0</NormalTerKwa>
+      <NormalTerKwa>6</NormalTerKwa>
       <NormalKwiSek>0</NormalKwiSek>
-      <NormalSepOkt>0</NormalSepOkt>
+      <NormalSepOkt>6</NormalSepOkt>
     </NormalCourse>
     <HardCourse>
       <HardUno>0</HardUno>
-      <HardDos>6</HardDos>
+      <HardDos>8</HardDos>
       <HardTres>0</HardTres>
     </HardCourse>
     <HardcoreCourse>
       <HardcoreIchi>0</HardcoreIchi>
-      <HardcoerNi>5</HardcoerNi>
+      <HardcoerNi>3</HardcoerNi>
     </HardcoreCourse>
   </Highscores>
 </Save>
