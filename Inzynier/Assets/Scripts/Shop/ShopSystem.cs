@@ -263,13 +263,18 @@ public class ShopSystem : MonoBehaviour
         //zmiana kolorów na żółty jeżeli można kupić i czerwony jeżeli brakuje monet
         for(int i=0; i<itemsProfile.Length; i++)
         {
-            if(checkIfProfileAvailable(i))
+            if(itemsProfile[i] != null) // bez tego błąd, bo próbujemy zmieniać nieistniejący obiekt
             {
-                itemsProfile[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
-            }
-            else
-            {
-                itemsProfile[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
+                if(checkIfProfileAvailable(i))
+                {
+                    Debug.Log("I: "+i+", jest yellow");
+                    itemsProfile[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
+                }
+                else
+                {
+                    Debug.Log("I: "+i+", jest red");
+                    itemsProfile[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
+                }
             }
         }
     }

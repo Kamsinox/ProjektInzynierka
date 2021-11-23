@@ -1,35 +1,45 @@
 <Save FileName="Data">
-  <Coins>1590</Coins>
-  <AllCoins>4540</AllCoins>
-  <CurrentProfileImage>Copper Ingot</CurrentProfileImage>
-  <CurrentBackground>Stardew2</CurrentBackground>
-  <CurrentFrame>red</CurrentFrame>
-  <FreePlayNotesPlayed>27</FreePlayNotesPlayed>
+  <Coins>150</Coins>
+  <AllCoins>8600</AllCoins>
+  <CurrentProfileImage>Coal</CurrentProfileImage>
+  <CurrentBackground>Stardew4</CurrentBackground>
+  <CurrentFrame>blue</CurrentFrame>
+  <FreePlayNotesPlayed>34</FreePlayNotesPlayed>
   <Shop>
     <ProfileImages>
       <Image>Coal</Image>
       <Image>Copper Ingot</Image>
+      <Image>Cut Topaz</Image>
       <Image>Crystal</Image>
     </ProfileImages>
     <Backgrounds>
       <Background>Stardew1</Background>
       <Background>Stardew2</Background>
+      <Background>Stardew3</Background>
+      <Background>Stardew4</Background>
+      <Background>Stardew5</Background>
+      <Background>Stardew6</Background>
     </Backgrounds>
     <ProfileFrames>
       <Frame>red</Frame>
       <Frame>pink</Frame>
       <Frame>orange</Frame>
       <Frame>yellow</Frame>
+      <Frame>lightblue</Frame>
+      <Frame>blue</Frame>
+      <Frame>brown</Frame>
+      <Frame>green</Frame>
+      <Frame>grey</Frame>
     </ProfileFrames>
   </Shop>
   <Highscores>
     <EasyCourse>
       <EasyPrymaOktawa>2</EasyPrymaOktawa>
       <EasySekunda>3</EasySekunda>
-      <EasyTercja>0</EasyTercja>
+      <EasyTercja>1</EasyTercja>
       <EasyKwaKwi>0</EasyKwaKwi>
       <EasySeksta>0</EasySeksta>
-      <EasySeptyma>0</EasySeptyma>
+      <EasySeptyma>3</EasySeptyma>
     </EasyCourse>
     <NormalCourse>
       <NormalSekunda>0</NormalSekunda>
