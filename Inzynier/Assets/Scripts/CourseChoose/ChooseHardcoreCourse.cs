@@ -4,7 +4,6 @@ using TMPro;
 
 public class ChooseHardcoreCourse : MonoBehaviour
 {
-    public static int currentCourse = 0;
 
     void Start()
     {

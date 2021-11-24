@@ -88,6 +88,10 @@ public class EasyCourseManager : MonoBehaviour
             coins[0].InnerText = licznik.ToString();
             allCoins[0].InnerText = licznik2.ToString();
 
+            //Achievment
+            AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("1",finalScore);
+
+            //zapisanie dokumentu
             xmlDocument.Save(filePath);
 
         }

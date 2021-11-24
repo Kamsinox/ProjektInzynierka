@@ -1,6 +1,6 @@
 <Save FileName="Data">
-  <Coins>90</Coins>
-  <AllCoins>4450</AllCoins>
+  <Coins>155</Coins>
+  <AllCoins>4515</AllCoins>
   <CurrentProfileImage>Cut Sapphire</CurrentProfileImage>
   <CurrentBackground>Stardew2</CurrentBackground>
   <CurrentFrame>black</CurrentFrame>
