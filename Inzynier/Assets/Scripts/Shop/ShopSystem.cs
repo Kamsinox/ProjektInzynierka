@@ -122,6 +122,8 @@ public class ShopSystem : MonoBehaviour
             destroyItem(id,1);
         }
         checkOtherProfilesIfAvailable();
+        checkOtherBackgoundsIfAvailable();
+        checkOtherFramesIfAvailable();
     }
 
     private bool checkIfProfileAvailable(int id)
@@ -169,7 +171,9 @@ public class ShopSystem : MonoBehaviour
             saveToXMLItemBackgound(id);
             destroyItem(id,2);
         }
+        checkOtherProfilesIfAvailable();
         checkOtherBackgoundsIfAvailable();
+        checkOtherFramesIfAvailable();
     }
 
     private bool checkIfBackgroundAvailable(int id)
@@ -217,6 +221,8 @@ public class ShopSystem : MonoBehaviour
             saveToXMLItemFrame(id);
             destroyItem(id,3);
         }
+        checkOtherProfilesIfAvailable();
+        checkOtherBackgoundsIfAvailable();
         checkOtherFramesIfAvailable();
     }
 
@@ -267,12 +273,10 @@ public class ShopSystem : MonoBehaviour
             {
                 if(checkIfProfileAvailable(i))
                 {
-                    Debug.Log("I: "+i+", jest yellow");
                     itemsProfile[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
                 }
                 else
                 {
-                    Debug.Log("I: "+i+", jest red");
                     itemsProfile[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
                 }
             }
@@ -284,13 +288,16 @@ public class ShopSystem : MonoBehaviour
         //zmiana kolorów na żółty jeżeli można kupić i czerwony jeżeli brakuje monet
         for(int i=0; i<itemsBackground.Length; i++)
         {
-            if(checkIfBackgroundAvailable(i))
+            if(itemsBackground[i] != null) // bez tego błąd, bo próbujemy zmieniać nieistniejący obiekt
             {
-                itemsBackground[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
-            }
-            else
-            {
-                itemsBackground[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
+                if(checkIfBackgroundAvailable(i))
+                {
+                    itemsBackground[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
+                }
+                else
+                {
+                    itemsBackground[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
+                }
             }
         }
     }
@@ -300,13 +307,16 @@ public class ShopSystem : MonoBehaviour
         //zmiana kolorów na żółty jeżeli można kupić i czerwony jeżeli brakuje monet
         for(int i=0; i<itemsFrame.Length; i++)
         {
-            if(checkIfFrameAvailable(i))
+            if(itemsFrame[i] != null) // bez tego błąd, bo próbujemy zmieniać nieistniejący obiekt
             {
-                itemsFrame[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
-            }
-            else
-            {
-                itemsFrame[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
+                if(checkIfFrameAvailable(i))
+                {
+                    itemsFrame[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 0, 255);
+                }
+                else
+                {
+                    itemsFrame[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 0, 0, 255);
+                }
             }
         }
     }

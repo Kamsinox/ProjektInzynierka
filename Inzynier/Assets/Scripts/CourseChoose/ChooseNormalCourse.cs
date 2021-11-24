@@ -4,8 +4,6 @@ using TMPro;
 
 public class ChooseNormalCourse : MonoBehaviour
 {
-    public static int currentCourse = 0;
-
     void Start()
     {
         EasyCourseManager.courseID = 2;
@@ -15,47 +13,47 @@ public class ChooseNormalCourse : MonoBehaviour
     public void loadSceneKursNormal1()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSekunda");
-        currentCourse = 0;
+        EasyCourseManager.currentCourse = 0;
     }
     public void loadSceneKursNormal2()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalTercja");
-        currentCourse = 1;
+        EasyCourseManager.currentCourse = 1;
     }
     public void loadSceneKursNormal3()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalKwaKwi");
-        currentCourse = 2;
+        EasyCourseManager.currentCourse = 2;
     }
     public void loadSceneKursNormal4()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSeksta");
-        currentCourse = 3;
+        EasyCourseManager.currentCourse = 3;
     }
     public void loadSceneKursNormal5()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSeptyma");
-        currentCourse = 4;
+        EasyCourseManager.currentCourse = 4;
     }
     public void loadSceneKursNormal6()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalPrymaSekunda");
-        currentCourse = 5;
+        EasyCourseManager.currentCourse = 5;
     }
     public void loadSceneKursNormal7()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalTercjaKwarta");
-        currentCourse = 6;
+        EasyCourseManager.currentCourse = 6;
     }
     public void loadSceneKursNormal8()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalKwintaSeksta");
-        currentCourse = 7;
+        EasyCourseManager.currentCourse = 7;
     }
     public void loadSceneKursNormal9()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSeptymaOktawa");
-        currentCourse = 8;
+        EasyCourseManager.currentCourse = 8;
     }
     #endregion
 

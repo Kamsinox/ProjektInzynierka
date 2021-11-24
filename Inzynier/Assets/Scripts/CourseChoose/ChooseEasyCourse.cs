@@ -4,8 +4,6 @@ using TMPro;
 
 public class ChooseEasyCourse : MonoBehaviour
 {
-    public static int currentCourse = 0;
- 
     void Start()
     {
         EasyCourseManager.courseID = 1;
@@ -15,32 +13,32 @@ public class ChooseEasyCourse : MonoBehaviour
     public void loadSceneKursEasy1()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyPryOkt");
-        currentCourse = 0;
+        EasyCourseManager.currentCourse = 0;
     }
     public void loadSceneKursEasy2()
     {
         SceneManager.LoadScene(sceneName:"CourseEasySekunda");
-        currentCourse = 1;
+        EasyCourseManager.currentCourse = 1;
     }
     public void loadSceneKursEasy3()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyTercja");
-        currentCourse = 2;
+        EasyCourseManager.currentCourse = 2;
     }
     public void loadSceneKursEasy4()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyKwaKwi");
-        currentCourse = 3;
+        EasyCourseManager.currentCourse = 3;
     }
     public void loadSceneKursEasy5()
     {
         SceneManager.LoadScene(sceneName:"CourseEasySeksta");
-        currentCourse = 4;
+        EasyCourseManager.currentCourse = 4;
     }
     public void loadSceneKursEasy6()
     {
         SceneManager.LoadScene(sceneName:"CourseEasySeptyma");
-        currentCourse = 5;
+        EasyCourseManager.currentCourse = 5;
     }
     #endregion
 

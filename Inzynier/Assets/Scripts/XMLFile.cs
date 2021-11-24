@@ -165,6 +165,135 @@ public class XMLFile : MonoBehaviour
                     #endregion
 
                 #endregion
+                
+                #region CoursesProgress
+                XmlElement courseProgress = xmlDocument.CreateElement("CoursesProgress");
+                root.AppendChild(courseProgress);
+
+                    #region CourseEasy
+                    XmlElement courseEasyProgress = xmlDocument.CreateElement("EasyCourseProgress");
+                    courseProgress.AppendChild(courseEasyProgress);
+
+                        XmlElement courseEasyProgress1 = xmlDocument.CreateElement("EasyPrymaOktawaProgress");
+                        courseEasyProgress1.InnerText="1";
+                        courseEasyProgress.AppendChild(courseEasyProgress1);
+
+                        XmlElement courseEasyProgress2 = xmlDocument.CreateElement("EasySekundaProgress");
+                        courseEasyProgress2.InnerText="0";
+                        courseEasyProgress.AppendChild(courseEasyProgress2);
+
+                        XmlElement courseEasyProgress3 = xmlDocument.CreateElement("EasyTercjaProgress");
+                        courseEasyProgress3.InnerText="0";
+                        courseEasyProgress.AppendChild(courseEasyProgress3);
+
+                        XmlElement courseEasyProgress4 = xmlDocument.CreateElement("EasyKwaKwiProgress");
+                        courseEasyProgress4.InnerText="0";
+                        courseEasyProgress.AppendChild(courseEasyProgress4);
+
+                        XmlElement courseEasyProgress5 = xmlDocument.CreateElement("EasySekstaProgress");
+                        courseEasyProgress5.InnerText="0";
+                        courseEasyProgress.AppendChild(courseEasyProgress5);
+
+                        XmlElement courseEasyProgress6 = xmlDocument.CreateElement("EasySeptymaProgress");
+                        courseEasyProgress6.InnerText="0";
+                        courseEasyProgress.AppendChild(courseEasyProgress6);
+                    #endregion
+
+                    #region CourseNormal
+                    XmlElement courseNomralProgress = xmlDocument.CreateElement("NormalCourseProgress");
+                    courseProgress.AppendChild(courseNomralProgress);
+
+                        XmlElement courseNormalProgress1 = xmlDocument.CreateElement("NormalSekundaProgress");
+                        courseNormalProgress1.InnerText="1";
+                        courseNomralProgress.AppendChild(courseNormalProgress1);
+
+                        XmlElement courseNormalProgress2 = xmlDocument.CreateElement("NormalTercjaProgress");
+                        courseNormalProgress2.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress2);
+
+                        XmlElement courseNormalProgress3 = xmlDocument.CreateElement("NormalKwaKwiProgress");
+                        courseNormalProgress3.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress3);
+
+                        XmlElement courseNormalProgress4 = xmlDocument.CreateElement("NormalSekstaProgress");
+                        courseNormalProgress4.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress4);
+
+                        XmlElement courseNormalProgress5 = xmlDocument.CreateElement("NormalSeptymaProgress");
+                        courseNormalProgress5.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress5);
+
+                        XmlElement courseNormalProgress6 = xmlDocument.CreateElement("NormalPrySekProgress");
+                        courseNormalProgress6.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress6);
+
+                        XmlElement courseNormalProgress7 = xmlDocument.CreateElement("NormalTerKwaProgress");
+                        courseNormalProgress7.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress7);
+
+                        XmlElement courseNormalProgress8 = xmlDocument.CreateElement("NormalKwiSekProgress");
+                        courseNormalProgress8.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress8);
+
+                        XmlElement courseNormalProgress9 = xmlDocument.CreateElement("NormalSepOktProgress");
+                        courseNormalProgress9.InnerText="0";
+                        courseNomralProgress.AppendChild(courseNormalProgress9);
+
+                    #endregion
+                
+                    #region CourseHard
+                    XmlElement courseHardProgress = xmlDocument.CreateElement("HardCourseProgress");
+                    courseProgress.AppendChild(courseHardProgress);
+
+                        XmlElement courseHardProgress1 = xmlDocument.CreateElement("HardUnoProgress");
+                        courseHardProgress1.InnerText="1";
+                        courseHardProgress.AppendChild(courseHardProgress1);
+
+                        XmlElement courseHardProgress2 = xmlDocument.CreateElement("HardDosProgress");
+                        courseHardProgress2.InnerText="0";
+                        courseHardProgress.AppendChild(courseHardProgress2);
+
+                        XmlElement courseHardProgress3 = xmlDocument.CreateElement("HardTresProgress");
+                        courseHardProgress3.InnerText="0";
+                        courseHardProgress.AppendChild(courseHardProgress3);
+                    #endregion
+
+                    #region CourseHardcore
+                    XmlElement courseHardcoreProgress = xmlDocument.CreateElement("HardcoreCourseProgress");
+                    courseProgress.AppendChild(courseHardcoreProgress);
+
+                        XmlElement courseHardcoreProgress1 = xmlDocument.CreateElement("HardcoreIchiProgress");
+                        courseHardcoreProgress1.InnerText="1";
+                        courseHardcoreProgress.AppendChild(courseHardcoreProgress1);
+
+                        XmlElement courseHardcoreProgress2 = xmlDocument.CreateElement("HardcoerNiProgress");
+                        courseHardcoreProgress2.InnerText="0";
+                        courseHardcoreProgress.AppendChild(courseHardcoreProgress2);
+                    #endregion
+
+                #endregion
+
+                #region LevelsProgress
+                XmlElement levelProgress = xmlDocument.CreateElement("LevelsProgress");
+                root.AppendChild(levelProgress);
+
+                    XmlElement levelEasyProgress = xmlDocument.CreateElement("EasyLevelProgress");
+                    levelEasyProgress.InnerText="1";
+                    levelProgress.AppendChild(levelEasyProgress);
+
+                    XmlElement levelNormalProgress = xmlDocument.CreateElement("NormalLevelProgress");
+                    levelNormalProgress.InnerText="0";
+                    levelProgress.AppendChild(levelNormalProgress);
+
+                    XmlElement levelHardProgress = xmlDocument.CreateElement("HardLevelProgress");
+                    levelHardProgress.InnerText="0";
+                    levelProgress.AppendChild(levelHardProgress);
+
+                    XmlElement levelHardcoreProgress = xmlDocument.CreateElement("HardcoreLevelProgress");
+                    levelHardcoreProgress.InnerText="0";
+                    levelProgress.AppendChild(levelHardcoreProgress);
+
+                #endregion
 
             xmlDocument.AppendChild(root);
 

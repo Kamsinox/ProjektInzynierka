@@ -1,65 +1,93 @@
 <Save FileName="Data">
-  <Coins>150</Coins>
-  <AllCoins>8600</AllCoins>
-  <CurrentProfileImage>Coal</CurrentProfileImage>
-  <CurrentBackground>Stardew4</CurrentBackground>
-  <CurrentFrame>blue</CurrentFrame>
-  <FreePlayNotesPlayed>34</FreePlayNotesPlayed>
+  <Coins>90</Coins>
+  <AllCoins>4450</AllCoins>
+  <CurrentProfileImage>Cut Sapphire</CurrentProfileImage>
+  <CurrentBackground>Stardew2</CurrentBackground>
+  <CurrentFrame>black</CurrentFrame>
+  <FreePlayNotesPlayed>12</FreePlayNotesPlayed>
   <Shop>
     <ProfileImages>
-      <Image>Coal</Image>
       <Image>Copper Ingot</Image>
       <Image>Cut Topaz</Image>
+      <Image>Cut Sapphire</Image>
       <Image>Crystal</Image>
+      <Image>Coal</Image>
     </ProfileImages>
     <Backgrounds>
-      <Background>Stardew1</Background>
       <Background>Stardew2</Background>
+      <Background>Stardew1</Background>
       <Background>Stardew3</Background>
-      <Background>Stardew4</Background>
-      <Background>Stardew5</Background>
-      <Background>Stardew6</Background>
     </Backgrounds>
     <ProfileFrames>
+      <Frame>Prem1</Frame>
+      <Frame>black</Frame>
       <Frame>red</Frame>
-      <Frame>pink</Frame>
-      <Frame>orange</Frame>
-      <Frame>yellow</Frame>
-      <Frame>lightblue</Frame>
-      <Frame>blue</Frame>
-      <Frame>brown</Frame>
-      <Frame>green</Frame>
-      <Frame>grey</Frame>
     </ProfileFrames>
   </Shop>
   <Highscores>
     <EasyCourse>
       <EasyPrymaOktawa>2</EasyPrymaOktawa>
-      <EasySekunda>3</EasySekunda>
-      <EasyTercja>1</EasyTercja>
+      <EasySekunda>0</EasySekunda>
+      <EasyTercja>4</EasyTercja>
       <EasyKwaKwi>0</EasyKwaKwi>
-      <EasySeksta>0</EasySeksta>
-      <EasySeptyma>3</EasySeptyma>
+      <EasySeksta>2</EasySeksta>
+      <EasySeptyma>2</EasySeptyma>
     </EasyCourse>
     <NormalCourse>
-      <NormalSekunda>0</NormalSekunda>
-      <NormalTercja>0</NormalTercja>
-      <NormalKwaKwi>1</NormalKwaKwi>
-      <NormalSeksta>0</NormalSeksta>
-      <NormalSeptyma>0</NormalSeptyma>
-      <NormalPrySek>0</NormalPrySek>
-      <NormalTerKwa>6</NormalTerKwa>
-      <NormalKwiSek>0</NormalKwiSek>
+      <NormalSekunda>3</NormalSekunda>
+      <NormalTercja>2</NormalTercja>
+      <NormalKwaKwi>4</NormalKwaKwi>
+      <NormalSeksta>1</NormalSeksta>
+      <NormalSeptyma>2</NormalSeptyma>
+      <NormalPrySek>5</NormalPrySek>
+      <NormalTerKwa>5</NormalTerKwa>
+      <NormalKwiSek>6</NormalKwiSek>
       <NormalSepOkt>6</NormalSepOkt>
     </NormalCourse>
     <HardCourse>
-      <HardUno>0</HardUno>
+      <HardUno>7</HardUno>
       <HardDos>8</HardDos>
-      <HardTres>0</HardTres>
+      <HardTres>2</HardTres>
     </HardCourse>
     <HardcoreCourse>
-      <HardcoreIchi>0</HardcoreIchi>
-      <HardcoerNi>3</HardcoerNi>
+      <HardcoreIchi>10</HardcoreIchi>
+      <HardcoerNi>5</HardcoerNi>
     </HardcoreCourse>
   </Highscores>
+  <CoursesProgress>
+    <EasyCourseProgress>
+      <EasyPrymaOktawaProgress>1</EasyPrymaOktawaProgress>
+      <EasySekundaProgress>1</EasySekundaProgress>
+      <EasyTercjaProgress>1</EasyTercjaProgress>
+      <EasyKwaKwiProgress>1</EasyKwaKwiProgress>
+      <EasySekstaProgress>1</EasySekstaProgress>
+      <EasySeptymaProgress>1</EasySeptymaProgress>
+    </EasyCourseProgress>
+    <NormalCourseProgress>
+      <NormalSekundaProgress>1</NormalSekundaProgress>
+      <NormalTercjaProgress>1</NormalTercjaProgress>
+      <NormalKwaKwiProgress>1</NormalKwaKwiProgress>
+      <NormalSekstaProgress>1</NormalSekstaProgress>
+      <NormalSeptymaProgress>1</NormalSeptymaProgress>
+      <NormalPrySekProgress>1</NormalPrySekProgress>
+      <NormalTerKwaProgress>1</NormalTerKwaProgress>
+      <NormalKwiSekProgress>1</NormalKwiSekProgress>
+      <NormalSepOktProgress>1</NormalSepOktProgress>
+    </NormalCourseProgress>
+    <HardCourseProgress>
+      <HardUnoProgress>1</HardUnoProgress>
+      <HardDosProgress>1</HardDosProgress>
+      <HardTresProgress>1</HardTresProgress>
+    </HardCourseProgress>
+    <HardcoreCourseProgress>
+      <HardcoreIchiProgress>1</HardcoreIchiProgress>
+      <HardcoerNiProgress>1</HardcoerNiProgress>
+    </HardcoreCourseProgress>
+  </CoursesProgress>
+  <LevelsProgress>
+    <EasyLevelProgress>1</EasyLevelProgress>
+    <NormalLevelProgress>1</NormalLevelProgress>
+    <HardLevelProgress>1</HardLevelProgress>
+    <HardcoreLevelProgress>1</HardcoreLevelProgress>
+  </LevelsProgress>
 </Save>

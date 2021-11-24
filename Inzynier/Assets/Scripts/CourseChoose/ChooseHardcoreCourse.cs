@@ -15,12 +15,12 @@ public class ChooseHardcoreCourse : MonoBehaviour
     public void loadSceneKursHardcore1()
     {
         SceneManager.LoadScene(sceneName:"CourseHardcore1");
-        currentCourse = 0;
+        EasyCourseManager.currentCourse = 0;
     }
     public void loadSceneKursHardcore2()
     {
         SceneManager.LoadScene(sceneName:"CourseHardcore2");
-        currentCourse = 1;
+        EasyCourseManager.currentCourse = 1;
     }
     #endregion
 

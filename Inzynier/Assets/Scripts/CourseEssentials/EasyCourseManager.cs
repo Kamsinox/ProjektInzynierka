@@ -42,6 +42,8 @@ public class EasyCourseManager : MonoBehaviour
 
 
     public static int courseID;
+    public static int currentCourse;
+
 
     void Start()
     {
@@ -51,7 +53,7 @@ public class EasyCourseManager : MonoBehaviour
         levelManager();
         
         Debug.Log("wybrano kurs trunosc: " + courseID);
-        Debug.Log("wybrano kurs nr: " + ChooseEasyCourse.currentCourse);
+        Debug.Log("wybrano kurs nr: " + currentCourse);
         
         //Sprite dos = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_3.png", typeof(Sprite));
         //Sprite uno = Resources.Load <Sprite> ("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_1.png");
@@ -60,11 +62,10 @@ public class EasyCourseManager : MonoBehaviour
     #region XMLFun
     private void saveByXML()
     {
-        XmlDocument xmlDocument = new XmlDocument();
         string filePath = Application.dataPath + "/Data.txt";
-
         if(File.Exists(filePath))
         {
+            XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.Load(filePath);
 
             //pobieramy node (jako że "node" jest podstawą, a "element" jest elementem "nodea")
@@ -92,6 +93,65 @@ public class EasyCourseManager : MonoBehaviour
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
     }
+
+    private void levelProgressSave()
+    {
+        string filePath = Application.dataPath + "/Data.txt";
+        if(File.Exists(filePath))
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.Load(filePath);
+            XmlNodeList courses = null; 
+
+            switch(courseID)
+            {
+                case 1: 
+                    courses = xmlDocument.GetElementsByTagName("EasyCourseProgress");
+                    if(courses[0].ChildNodes.Count > currentCourse+1) 
+                        courses[0].ChildNodes[currentCourse+1].InnerText = "1";
+                    else
+                    {
+                        courses = xmlDocument.GetElementsByTagName("LevelsProgress");
+                        courses[0].ChildNodes[courseID].InnerText = "1";
+                    }
+                break;
+
+                case 2: 
+                    courses = xmlDocument.GetElementsByTagName("NormalCourseProgress");
+                    if(courses[0].ChildNodes.Count > currentCourse+1) 
+                        courses[0].ChildNodes[currentCourse+1].InnerText = "1";
+                    else
+                    {
+                        courses = xmlDocument.GetElementsByTagName("LevelsProgress");
+                        courses[0].ChildNodes[courseID].InnerText = "1";
+                    }
+                break;
+
+                case 3: 
+                    courses = xmlDocument.GetElementsByTagName("HardCourseProgress");
+                    if(courses[0].ChildNodes.Count > currentCourse+1) 
+                        courses[0].ChildNodes[currentCourse+1].InnerText = "1";
+                    else
+                    {
+                        courses = xmlDocument.GetElementsByTagName("LevelsProgress");
+                        courses[0].ChildNodes[courseID].InnerText = "1";
+                    }
+                break;
+
+                case 4: 
+                    courses = xmlDocument.GetElementsByTagName("HardcoreCourseProgress");
+                    if(courses[0].ChildNodes.Count > currentCourse+1) 
+                        courses[0].ChildNodes[currentCourse+1].InnerText = "1";
+                break;
+
+                default: Debug.Log("Błąd przy wybieraniu idCourse w progressCourse"); break;
+            }
+
+            xmlDocument.Save(filePath);
+        }
+        else Debug.Log("FILE NOT SAVED dla levelProgressSave" + filePath);
+            
+    }
     #endregion
 
     private int setFinalScore()
@@ -109,7 +169,7 @@ public class EasyCourseManager : MonoBehaviour
             {
                 case 1:
                     //w zależności od wybranego kursu ustalamy highscore
-                    switch(ChooseEasyCourse.currentCourse)
+                    switch(currentCourse)
                     {
                         case 0:
                             XmlNodeList highscoreEasyPryOkt = xmlDocument.GetElementsByTagName("EasyPrymaOktawa");
@@ -149,49 +209,49 @@ public class EasyCourseManager : MonoBehaviour
                     break;
 
                 case 2: 
-                    switch(ChooseNormalCourse.currentCourse)
+                    switch(currentCourse)
                     {
-                        case 1:
+                        case 0:
                             XmlNodeList highscoreNormalSek = xmlDocument.GetElementsByTagName("NormalSekunda");
                             setFinalScoreinFinalScore(highscoreNormalSek);
                         break;
 
-                        case 2:
+                        case 1:
                             XmlNodeList highscoreNormalTer = xmlDocument.GetElementsByTagName("NormalTercja");
                             setFinalScoreinFinalScore(highscoreNormalTer);
                         break;
 
-                        case 3:
+                        case 2:
                             XmlNodeList highscoreNormalKwaKwi = xmlDocument.GetElementsByTagName("NormalKwaKwi");
                             setFinalScoreinFinalScore(highscoreNormalKwaKwi);
                         break;
 
-                        case 4:
+                        case 3:
                             XmlNodeList highscoreNormalSeksta = xmlDocument.GetElementsByTagName("NormalSeksta");
                             setFinalScoreinFinalScore(highscoreNormalSeksta);
                         break;
 
-                        case 5:
+                        case 4:
                             XmlNodeList highscoreNormalSep = xmlDocument.GetElementsByTagName("NormalSeptyma");
                             setFinalScoreinFinalScore(highscoreNormalSep);
                         break;
 
-                        case 6:
+                        case 5:
                             XmlNodeList highscoreNormalPrySek = xmlDocument.GetElementsByTagName("NormalPrySek");
                             setFinalScoreinFinalScore(highscoreNormalPrySek);
                         break;
 
-                        case 7:
+                        case 6:
                             XmlNodeList highscoreNormalTerKwa = xmlDocument.GetElementsByTagName("NormalTerKwa");
                             setFinalScoreinFinalScore(highscoreNormalTerKwa);
                         break;
 
-                        case 8:
+                        case 7:
                             XmlNodeList highscoreNormalKwiSek = xmlDocument.GetElementsByTagName("NormalKwiSek");
                             setFinalScoreinFinalScore(highscoreNormalKwiSek);
                         break;
 
-                        case 9:
+                        case 8:
                             XmlNodeList highscoreNormalSepOpt = xmlDocument.GetElementsByTagName("NormalSepOkt");
                             setFinalScoreinFinalScore(highscoreNormalSepOpt);
                         break;
@@ -204,7 +264,7 @@ public class EasyCourseManager : MonoBehaviour
                     break;
 
                 case 3:
-                    switch(ChooseHardCourse.currentCourse)
+                    switch(currentCourse)
                     {
                         case 0:
                             XmlNodeList highscoreHard1 = xmlDocument.GetElementsByTagName("HardUno");
@@ -228,7 +288,7 @@ public class EasyCourseManager : MonoBehaviour
                 break;
 
                 case 4:
-                    switch(ChooseHardcoreCourse.currentCourse)
+                    switch(currentCourse)
                     {
                         case 0:
                             XmlNodeList highscoreHardcore1 = xmlDocument.GetElementsByTagName("HardcoreIchi");
@@ -475,6 +535,9 @@ public class EasyCourseManager : MonoBehaviour
 
             //wyświetlanie wyniku
             SetScoreText(finalScoreText, setFinalScore());
+
+            //zapisywanie do XML
+            levelProgressSave();
             saveByXML();
         }
     }
