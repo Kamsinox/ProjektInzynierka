@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using System.Xml;
 using System.IO;
@@ -9,7 +10,12 @@ public class XMLFile : MonoBehaviour
         //jeżeli nie ma pliku to utworzy z pustymi danymi
         //w przeciwnym wypadku nic nie zrobi, żeby nie nadpisać pustym plikiem
         if(!File.Exists(Application.dataPath + "/Data.txt")) 
-        createXMLFile();
+        {
+            createXMLFile();
+            
+            //utworzenie osiągnięć
+            AchievmentsManager.achievmentsManagerInstance.writeAchievmentsToXml();
+        }
     }
 
     private void createXMLFile()
@@ -293,6 +299,11 @@ public class XMLFile : MonoBehaviour
                     levelHardcoreProgress.InnerText="0";
                     levelProgress.AppendChild(levelHardcoreProgress);
 
+                #endregion
+
+                #region Achievments
+                XmlElement achievments = xmlDocument.CreateElement("Achievments");
+                root.AppendChild(achievments);
                 #endregion
 
             xmlDocument.AppendChild(root);

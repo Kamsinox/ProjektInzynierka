@@ -11,6 +11,7 @@ public class UserStatistics : MonoBehaviour
     public List<TMP_Text> textArea = new List<TMP_Text>();
     private string textToSave;
     private double procent;
+    private int sum;
     private int amount;
 
     public void showStatsInMenu()
@@ -31,13 +32,13 @@ public class UserStatistics : MonoBehaviour
             textArea[0].text = string.Format(textToSave);
 
             XmlNodeList amountOfProfiles = xmlDocument.GetElementsByTagName("ProfileImages");
-            textArea[1].text = string.Format(allImages(amountOfProfiles) + "/13");
+            textArea[1].text = string.Format(allImages(amountOfProfiles) + "/17");
 
             XmlNodeList amountOfBackgrounds = xmlDocument.GetElementsByTagName("Backgrounds");
             textArea[2].text = string.Format(allImages(amountOfBackgrounds) + "/9");
 
             XmlNodeList amountOfFrames = xmlDocument.GetElementsByTagName("ProfileFrames");
-            textArea[3].text = string.Format(allImages(amountOfFrames) + "/12");
+            textArea[3].text = string.Format(allImages(amountOfFrames) + "/13");
 
             XmlNodeList freeplayNotesPlayed = xmlDocument.GetElementsByTagName("FreePlayNotesPlayed");
             textToSave = freeplayNotesPlayed[0].InnerText.ToString();
@@ -45,10 +46,10 @@ public class UserStatistics : MonoBehaviour
 
 
             XmlNodeList percentEasy = xmlDocument.GetElementsByTagName("EasyCourse");
-            textArea[5].text = string.Format(percentCalc(percentEasy,28) + "%");
+            textArea[5].text = string.Format(percentCalc(percentEasy,24) + "%");
 
             XmlNodeList percentNormal = xmlDocument.GetElementsByTagName("NormalCourse");
-            textArea[6].text = string.Format(percentCalc(percentNormal,46) + "%");
+            textArea[6].text = string.Format(percentCalc(percentNormal,44) + "%");
 
             XmlNodeList percentHard = xmlDocument.GetElementsByTagName("HardCourse");
             textArea[7].text = string.Format(percentCalc(percentHard,24) + "%");
@@ -83,4 +84,5 @@ public class UserStatistics : MonoBehaviour
         foreach (XmlNode x in nodeList[0].ChildNodes) amount++;
         return amount;
     }
+
 }

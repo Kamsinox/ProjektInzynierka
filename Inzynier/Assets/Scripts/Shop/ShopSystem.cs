@@ -159,6 +159,8 @@ public class ShopSystem : MonoBehaviour
             xmlDocument.Save(filePath);
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
+
+        AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("8",1);
     }
     #endregion
 
@@ -209,6 +211,8 @@ public class ShopSystem : MonoBehaviour
             xmlDocument.Save(filePath);
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
+
+        AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("9",1);
     }
     #endregion
 
@@ -259,6 +263,8 @@ public class ShopSystem : MonoBehaviour
             xmlDocument.Save(filePath);
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
+
+        AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("10",1);
     }
     #endregion
     

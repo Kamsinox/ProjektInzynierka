@@ -162,6 +162,7 @@ public class MusicNoteCodes : MonoBehaviour
 
     private void countNotesPlayed()
     {
+        int notesForAchivement = 0;
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))
         {
@@ -171,12 +172,16 @@ public class MusicNoteCodes : MonoBehaviour
             XmlNodeList notesPlayedElement = xmlDocument.GetElementsByTagName("FreePlayNotesPlayed");
             notesPlayed = int.Parse(notesPlayedElement[0].InnerText.ToString());
             notesPlayed++;
+            notesForAchivement++;
             notesPlayedElement[0].InnerText = notesPlayed.ToString();
 
             xmlDocument.Save(filePath);
 
         }
         else Debug.Log("FILE NOT LOADED for counting notes played in free play + filePath");
+
+        AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("6",notesForAchivement);
+        AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("7",notesForAchivement);
     }
 
 }

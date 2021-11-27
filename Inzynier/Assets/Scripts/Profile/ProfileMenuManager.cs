@@ -74,17 +74,14 @@ public class ProfileMenuManager : MonoBehaviour
     }
     #endregion
 
-    private void loadAllImages()
+    public void loadAllImages()
     {
-        List<string> nazwyProfil = new List<string>();
-        List<string> nazwyBackgorund = new List<string>();
-        List<string> nazwyFrame = new List<string>();
-
         string filePath = Application.dataPath + "/Data.txt";
         XmlDocument xmlDocument = new XmlDocument();
         xmlDocument.Load(filePath);
 
         #region loadProfileImages
+        List<string> nazwyProfil = new List<string>();
         XmlNodeList list1 = xmlDocument.GetElementsByTagName("ProfileImages");
         foreach(XmlNode x in list1[0].ChildNodes)
         {
@@ -104,6 +101,7 @@ public class ProfileMenuManager : MonoBehaviour
         #endregion
 
         #region loadBackgroundImages
+        List<string> nazwyBackgorund = new List<string>();
         XmlNodeList list2 = xmlDocument.GetElementsByTagName("Backgrounds");
         foreach(XmlNode x in list2[0].ChildNodes)
         {
@@ -123,6 +121,7 @@ public class ProfileMenuManager : MonoBehaviour
         #endregion
 
         #region loadFrameImages
+        List<string> nazwyFrame = new List<string>();
         XmlNodeList list3 = xmlDocument.GetElementsByTagName("ProfileFrames");
         foreach(XmlNode x in list3[0].ChildNodes)
         {

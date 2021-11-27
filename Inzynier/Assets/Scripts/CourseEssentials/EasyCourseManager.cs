@@ -88,16 +88,16 @@ public class EasyCourseManager : MonoBehaviour
             coins[0].InnerText = licznik.ToString();
             allCoins[0].InnerText = licznik2.ToString();
 
-            //Achievment
-            AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("1",finalScore);
-
             //zapisanie dokumentu
             xmlDocument.Save(filePath);
 
+            //Achievment (tam też jest zapisanie dokumentu)
+            AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("4",finalScore);
+            AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress("5",finalScore);
         }
         else Debug.Log("FILE NOT SAVED" + filePath);
     }
-
+    
     private void levelProgressSave()
     {
         string filePath = Application.dataPath + "/Data.txt";
@@ -316,6 +316,9 @@ public class EasyCourseManager : MonoBehaviour
             }
 
             xmlDocument.Save(filePath);
+
+            Debug.Log("Pronuje przesłać wynik: "+(goodAnswers-highscoreInt)+", do: "+(courseID-1).ToString());
+            AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress((courseID-1).ToString(),goodAnswers-highscoreInt);
         }
         else Debug.Log("FILE NOT SAVED przy finalScore" + filePath);
 
@@ -337,6 +340,7 @@ public class EasyCourseManager : MonoBehaviour
         // finał = 70
         finalScore = (highscoreInt * addHowManyPoints) + ((goodAnswers - highscoreInt) * addHowManyPoints * multiplier);
         nodeList[0].InnerText = goodAnswers.ToString();
+        
         }
 
         //jeżeli liczba poprawnych odpowiedzi będzie mniejsza lub równa rekordowi
