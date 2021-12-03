@@ -1,6 +1,6 @@
 <Save FileName="Data">
-  <Coins>30</Coins>
-  <AllCoins>30</AllCoins>
+  <Coins>60</Coins>
+  <AllCoins>60</AllCoins>
   <CurrentProfileImage>
   </CurrentProfileImage>
   <CurrentBackground>
@@ -116,7 +116,7 @@
       <Prize>liany-1</Prize>
       <Id>4</Id>
       <Type>Frame</Type>
-      <Current>30</Current>
+      <Current>60</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -124,7 +124,7 @@
       <Prize>Stonks</Prize>
       <Id>5</Id>
       <Type>Background</Type>
-      <Current>30</Current>
+      <Current>60</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>

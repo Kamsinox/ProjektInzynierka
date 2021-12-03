@@ -9,6 +9,7 @@ public class SpirteAudioClipManager : MonoBehaviour
     // NAZWA OBIEKTU IMAGE ZAWSZE MUSI BYĆ: "QuestionImage"
     // NAZWA PRZYCISKU DO ODTWORZENIA DŹWIĘKU MUSI BYĆ ZGODNA Z KODEM ORAZ DŹWIĘKIEM JAKI CHCEMY ZAGRAĆ
     
+    #region Sprites&AudioClips
      public Sprite[] spritesPryma;
      public AudioClip[] audioClipsPryma;
 
@@ -66,12 +67,12 @@ public class SpirteAudioClipManager : MonoBehaviour
 
     public Sprite[] spritesOktawa;
     public AudioClip[] audioClipsOktawa;
-
+    #endregion
 
     private int arraySize;
     private int randomNumber;
 
-
+    #region functions
     public void randomLevelPryma()
     {
         arraySize = spritesPryma.Length;
@@ -358,7 +359,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         AudioSource audioButton = GameObject.Find("ButtonPlayTwoNotesOktawa").GetComponent<AudioSource>();
         audioButton.Play();
     }
+    #endregion
 
-    
-    //w przyszłości może będzie tryton (jak już się ogarnie spirtey i audioclipy)
 }
