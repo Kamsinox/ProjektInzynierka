@@ -1267,6 +1267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonTercjaMala
       objectReference: {fileID: 0}
+    - target: {fileID: 1111954780690316247, guid: c122606c3e3ca6148bf60ae29d2fc22b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1111954780697314565, guid: c122606c3e3ca6148bf60ae29d2fc22b, type: 3}
       propertyPath: m_text
       value: "Tercja Ma\u0142a"

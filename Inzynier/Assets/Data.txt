@@ -1,26 +1,28 @@
 <Save FileName="Data">
-  <Coins>60</Coins>
-  <AllCoins>60</AllCoins>
-  <CurrentProfileImage>
-  </CurrentProfileImage>
+  <Coins>765</Coins>
+  <AllCoins>765</AllCoins>
+  <CurrentProfileImage>Pearl</CurrentProfileImage>
   <CurrentBackground>
   </CurrentBackground>
-  <CurrentFrame>
-  </CurrentFrame>
+  <CurrentFrame>liany-1</CurrentFrame>
   <FreePlayNotesPlayed>0</FreePlayNotesPlayed>
   <Shop>
-    <ProfileImages />
+    <ProfileImages>
+      <Image>Pearl</Image>
+    </ProfileImages>
     <Backgrounds />
-    <ProfileFrames />
+    <ProfileFrames>
+      <Frame>liany-1</Frame>
+    </ProfileFrames>
   </Shop>
   <Highscores>
     <EasyCourse>
-      <EasyPrymaOktawa>2</EasyPrymaOktawa>
-      <EasySekunda>0</EasySekunda>
-      <EasyTercja>0</EasyTercja>
-      <EasyKwaKwi>0</EasyKwaKwi>
-      <EasySeksta>0</EasySeksta>
-      <EasySeptyma>0</EasySeptyma>
+      <EasyPrymaOktawa>5</EasyPrymaOktawa>
+      <EasySekunda>10</EasySekunda>
+      <EasyTercja>10</EasyTercja>
+      <EasyKwaKwi>8</EasyKwaKwi>
+      <EasySeksta>6</EasySeksta>
+      <EasySeptyma>5</EasySeptyma>
     </EasyCourse>
     <NormalCourse>
       <NormalSekunda>0</NormalSekunda>
@@ -47,10 +49,10 @@
     <EasyCourseProgress>
       <EasyPrymaOktawaProgress>1</EasyPrymaOktawaProgress>
       <EasySekundaProgress>1</EasySekundaProgress>
-      <EasyTercjaProgress>0</EasyTercjaProgress>
-      <EasyKwaKwiProgress>0</EasyKwaKwiProgress>
-      <EasySekstaProgress>0</EasySekstaProgress>
-      <EasySeptymaProgress>0</EasySeptymaProgress>
+      <EasyTercjaProgress>1</EasyTercjaProgress>
+      <EasyKwaKwiProgress>1</EasyKwaKwiProgress>
+      <EasySekstaProgress>1</EasySekstaProgress>
+      <EasySeptymaProgress>1</EasySeptymaProgress>
     </EasyCourseProgress>
     <NormalCourseProgress>
       <NormalSekundaProgress>1</NormalSekundaProgress>
@@ -75,7 +77,7 @@
   </CoursesProgress>
   <LevelsProgress>
     <EasyLevelProgress>1</EasyLevelProgress>
-    <NormalLevelProgress>0</NormalLevelProgress>
+    <NormalLevelProgress>1</NormalLevelProgress>
     <HardLevelProgress>0</HardLevelProgress>
     <HardcoreLevelProgress>0</HardcoreLevelProgress>
   </LevelsProgress>
@@ -84,9 +86,9 @@
       <Prize>Pearl</Prize>
       <Id>0</Id>
       <Type>Profile</Type>
-      <Current>2</Current>
-      <IsUnlocked>0</IsUnlocked>
-      <Purchased>0</Purchased>
+      <Current>44</Current>
+      <IsUnlocked>1</IsUnlocked>
+      <Purchased>1</Purchased>
     </Achievment>
     <Achievment>
       <Prize>Ruby</Prize>
@@ -116,15 +118,15 @@
       <Prize>liany-1</Prize>
       <Id>4</Id>
       <Type>Frame</Type>
-      <Current>60</Current>
-      <IsUnlocked>0</IsUnlocked>
-      <Purchased>0</Purchased>
+      <Current>100</Current>
+      <IsUnlocked>1</IsUnlocked>
+      <Purchased>1</Purchased>
     </Achievment>
     <Achievment>
       <Prize>Stonks</Prize>
       <Id>5</Id>
       <Type>Background</Type>
-      <Current>60</Current>
+      <Current>765</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>

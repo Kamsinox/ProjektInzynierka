@@ -318,6 +318,8 @@ public class EasyCourseManager : MonoBehaviour
             xmlDocument.Save(filePath);
 
             Debug.Log("Pronuje przesłać wynik: "+(goodAnswers-highscoreInt)+", do: "+(courseID-1).ToString());
+            
+            if(goodAnswers - highscoreInt >= 0)
             AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress((courseID-1).ToString(),goodAnswers-highscoreInt);
         }
         else Debug.Log("FILE NOT SAVED przy finalScore" + filePath);

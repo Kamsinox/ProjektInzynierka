@@ -1600,7 +1600,7 @@ MonoBehaviour:
   - {fileID: 1592871161}
   - {fileID: 2028471761}
   - {fileID: 1398604182}
-  highscoresInt: 020000000500000005000000060000000300000003000000
+  highscoresInt: 050000000a0000000a000000080000000600000005000000
   idCourse: 1
 --- !u!4 &1014818707
 Transform:
@@ -1652,7 +1652,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.4969384, g: 0.9339623, b: 0.5167332, a: 0}
+  m_BackGroundColor: {r: 0.17782128, g: 0.4245283, b: 0.18789095, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
