@@ -32,10 +32,10 @@ public class UserStatistics : MonoBehaviour
             textArea[0].text = string.Format(textToSave);
 
             XmlNodeList amountOfProfiles = xmlDocument.GetElementsByTagName("ProfileImages");
-            textArea[1].text = string.Format(allImages(amountOfProfiles) + "/17");
+            textArea[1].text = string.Format(allImages(amountOfProfiles) + "/23");
 
             XmlNodeList amountOfBackgrounds = xmlDocument.GetElementsByTagName("Backgrounds");
-            textArea[2].text = string.Format(allImages(amountOfBackgrounds) + "/9");
+            textArea[2].text = string.Format(allImages(amountOfBackgrounds) + "/7");
 
             XmlNodeList amountOfFrames = xmlDocument.GetElementsByTagName("ProfileFrames");
             textArea[3].text = string.Format(allImages(amountOfFrames) + "/13");

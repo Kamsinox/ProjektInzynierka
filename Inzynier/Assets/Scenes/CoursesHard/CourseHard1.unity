@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1862822884}
+      objectReference: {fileID: 1787758201}
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: playSekundaWielka
@@ -440,7 +440,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.47058824, g: 0.19215687, b: 0.19607843, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -621,7 +621,7 @@ PrefabInstance:
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1862822884}
+      objectReference: {fileID: 1787758201}
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: playTercjaMala
@@ -673,7 +673,7 @@ MonoBehaviour:
   - {fileID: 2003623703}
   - {fileID: 196092298}
   - {fileID: 878251139}
-  courseLength: 12
+  courseLength: 15
   courseProgessText: {fileID: 1988418899}
   addHowManyPoints: 20
   multiplier: 4
@@ -1022,221 +1022,138 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1862822883
-GameObject:
+--- !u!1001 &1787758200
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1862822885}
-  - component: {fileID: 1862822884}
-  m_Layer: 0
-  m_Name: Sprite&AudioClipManager
-  m_TagString: AudioTag
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1862822884
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927716, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesKwarta.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesKwinta.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesOktawa.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsKwarta.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsKwinta.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsOktawa.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesSekstaMala.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesSeptymaMala.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesSekstaWielka.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesTercjaWielka.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsSekstaMala.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: spritesSeptymaWielka.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsSeptymaMala.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsSekstaWielka.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsTercjaWielka.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: audioClipsSeptymaWielka.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5817420961013927718, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+      propertyPath: m_Name
+      value: Sprite&AudioClipManagerOneNote
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+--- !u!114 &1787758201 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5817420961013927717, guid: 4a26e969f74555b48bba8efaa34a7461, type: 3}
+  m_PrefabInstance: {fileID: 1787758200}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862822883}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0718c12b507cd394d8c860f1ddeb1e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spritesPryma:
-  - {fileID: 21300000, guid: fd323cb96da874d4d9238171a24f2c50, type: 3}
-  - {fileID: 21300000, guid: ecfb755915c0b66469c5618d8cf3d896, type: 3}
-  - {fileID: 21300000, guid: be1782b236e324945846cb3c412908a4, type: 3}
-  - {fileID: 21300000, guid: b4a9b658a5d05c24a91b077a177bace4, type: 3}
-  - {fileID: 21300000, guid: 21ad03627581bea40919cd24679ee2b4, type: 3}
-  - {fileID: 21300000, guid: cf707a6c68e23d6488c87b890ced588c, type: 3}
-  - {fileID: 21300000, guid: 8924b32c9ba7b4d43ae5498e30959442, type: 3}
-  - {fileID: 21300000, guid: 5f5eeb8a34772ee48a557a751ffc9bbe, type: 3}
-  audioClipsPryma:
-  - {fileID: 8300000, guid: 9b16590b139f33346b1ee2e6cb46d34e, type: 3}
-  - {fileID: 8300000, guid: 35a11b4c5edb45f43905dcd23fedf223, type: 3}
-  - {fileID: 8300000, guid: 602cb65088cd1ed49bfc1532c98d53ad, type: 3}
-  - {fileID: 8300000, guid: a4cb534942827df47b866816a02f635c, type: 3}
-  - {fileID: 8300000, guid: c272cc0dcb4394f48a99752368c8ed30, type: 3}
-  - {fileID: 8300000, guid: d7c5e5b884c58c94a9c3afed896b7893, type: 3}
-  - {fileID: 8300000, guid: 38a53f24537a2d9428d3d8aaf28940bb, type: 3}
-  - {fileID: 8300000, guid: a66782ebaaeb1c54da7bcb780a336c0e, type: 3}
-  spritesSekundaMala:
-  - {fileID: 21300000, guid: c00d50bc63dffeb4b9ba87da24c3be31, type: 3}
-  - {fileID: 21300000, guid: f38c7e57a708c444e95e8ec6e8ee4b80, type: 3}
-  - {fileID: 21300000, guid: 70a243f814ed6884e8c3caccd54d66bd, type: 3}
-  - {fileID: 21300000, guid: e963148dca50e8948a56fb82b93491c4, type: 3}
-  - {fileID: 21300000, guid: 8883cbb7c21e9b240b725b3edb3779a7, type: 3}
-  - {fileID: 21300000, guid: 66e2c6f6680509841b65b68f4aaa4bec, type: 3}
-  - {fileID: 21300000, guid: 162aa38942a7e524d8f198a7cfdacf7c, type: 3}
-  - {fileID: 21300000, guid: dd59d959228c3ba45ac83f27b7c81eb6, type: 3}
-  - {fileID: 21300000, guid: 41d31167fbb782c40ac979019af591cf, type: 3}
-  - {fileID: 21300000, guid: 89e3df44e4d520742b6d781f24c58227, type: 3}
-  - {fileID: 21300000, guid: 9bae19798df3ee949ba95cd6cefb8e3d, type: 3}
-  - {fileID: 21300000, guid: 072d25319ec7275489514f24b62a68fd, type: 3}
-  - {fileID: 21300000, guid: 1356ee5ee4ad6f5439a4ae1811e221a5, type: 3}
-  - {fileID: 21300000, guid: b297994cf819e4c4c8d82290b53b315d, type: 3}
-  - {fileID: 21300000, guid: 8a9448661cb4d3747872fbd90aa96a2a, type: 3}
-  - {fileID: 21300000, guid: e7fc50addcf663241a53d6725f48f2d3, type: 3}
-  - {fileID: 21300000, guid: fb8c51ebf1104be4a93bcd81a939114a, type: 3}
-  - {fileID: 21300000, guid: d9e1539762226e64983dc643705d705c, type: 3}
-  - {fileID: 21300000, guid: d283a730b12bccb4b8f6f5ce41da461b, type: 3}
-  - {fileID: 21300000, guid: 8a5e8f7d547ab584eb048b8a1d8d18a4, type: 3}
-  - {fileID: 21300000, guid: 8df786d1b6a7d954da2334a4cea4f223, type: 3}
-  - {fileID: 21300000, guid: dbef9d8b290106c47b0b5b8ce6582a4e, type: 3}
-  - {fileID: 21300000, guid: 2ae1315bb93af3a4f8f21beeb08dcc69, type: 3}
-  - {fileID: 21300000, guid: 45956c2b62afdbd4b8d366428d2e0a44, type: 3}
-  audioClipsSekundaMala:
-  - {fileID: 8300000, guid: a955800f6e653c548a3ccac7309b8eaa, type: 3}
-  - {fileID: 8300000, guid: de422797394ba08468c4ded42fea0cf8, type: 3}
-  - {fileID: 8300000, guid: 0b2a3ad84fae0284f88b9e2ff72e900a, type: 3}
-  - {fileID: 8300000, guid: 6be3a18eb843ef045b7832aea85ee8d1, type: 3}
-  - {fileID: 8300000, guid: 454f8bcabac521e44ae93ecf9006a543, type: 3}
-  - {fileID: 8300000, guid: ebc6a70fbfe6d3a49bf96ba7bc001351, type: 3}
-  - {fileID: 8300000, guid: 279e852855b4449448aa2534f33d2e69, type: 3}
-  - {fileID: 8300000, guid: 497ab1bfcd2e5cc4db80f3899f888224, type: 3}
-  - {fileID: 8300000, guid: a9d9ab558dd81e64095acb2c5b57a3b3, type: 3}
-  - {fileID: 8300000, guid: 5c51461d30c677d469ec43dddfd1940b, type: 3}
-  - {fileID: 8300000, guid: d5bca3c6d54e22246b7b1ced42d3e76f, type: 3}
-  - {fileID: 8300000, guid: c0b215a8f336fd44f8069bc982216b49, type: 3}
-  - {fileID: 8300000, guid: 936786da7867d7a43b7f4b6a0808c9b8, type: 3}
-  - {fileID: 8300000, guid: 1bde8b8cf6a049c44b198d64c457c6f4, type: 3}
-  - {fileID: 8300000, guid: 8564e7c3a2393c743a3aa884fa7d6703, type: 3}
-  - {fileID: 8300000, guid: b36661e7cec079c45ba564f1fcd22330, type: 3}
-  - {fileID: 8300000, guid: 3152c9a07e6510b468742650bdb4c379, type: 3}
-  - {fileID: 8300000, guid: ecd82e1db794e434ba181474dbdb8ed8, type: 3}
-  - {fileID: 8300000, guid: d3276202459389144a9e2ce4ab5328ea, type: 3}
-  - {fileID: 8300000, guid: 407a765b9a779ab489cfdfa0a5249c3b, type: 3}
-  - {fileID: 8300000, guid: e24399915cb4dee438e493c53b15818e, type: 3}
-  - {fileID: 8300000, guid: bc80e3384f0a37b4e835ad015b561a4c, type: 3}
-  - {fileID: 8300000, guid: cdfd57aead7c228478ff23443ba3e007, type: 3}
-  - {fileID: 8300000, guid: fcaa0c194f75c924bbc4815086646c8d, type: 3}
-  spritesSekundaWielka:
-  - {fileID: 21300000, guid: 9b70d456add72164dbfc809709cce432, type: 3}
-  - {fileID: 21300000, guid: 5d38066afc4ebb54690450ea4d482f6d, type: 3}
-  - {fileID: 21300000, guid: 6db173569b09d924fb3ed7d665669d06, type: 3}
-  - {fileID: 21300000, guid: 6a0fbdfe34fef42448876d5c8ca65f5e, type: 3}
-  - {fileID: 21300000, guid: 0a3de3efd225f3d4ab2b4edbd02a3ac5, type: 3}
-  - {fileID: 21300000, guid: 4fd38d9b3472f0740b2809213ae435a0, type: 3}
-  - {fileID: 21300000, guid: 370b82bd1ffe79143a0061a8b91ccde3, type: 3}
-  - {fileID: 21300000, guid: ddd72dcca88cccb46b875b22a357c079, type: 3}
-  - {fileID: 21300000, guid: 143e7febe1a86734099a6ba16f4a32a6, type: 3}
-  - {fileID: 21300000, guid: 96a3ac9d75c10a64983b4327d59f74fd, type: 3}
-  - {fileID: 21300000, guid: f1818aae1ebb6d442bbfc649654a0c2e, type: 3}
-  - {fileID: 21300000, guid: bfeb096904dd44546bf8d6ae6ef55f3f, type: 3}
-  - {fileID: 21300000, guid: 8285bb68a2da6f643a2f0c9d4f826d76, type: 3}
-  - {fileID: 21300000, guid: b87dd275b215f354ebf75867823fce57, type: 3}
-  - {fileID: 21300000, guid: f4401b682d5ae7444afe940db9a8c5c9, type: 3}
-  - {fileID: 21300000, guid: 86d50ba1cc51a174198e396c15aa76c6, type: 3}
-  - {fileID: 21300000, guid: d6a42c6a536364349863983ead4ee9f5, type: 3}
-  - {fileID: 21300000, guid: 60a4fdbd38ec6814aae4671abcfa8454, type: 3}
-  - {fileID: 21300000, guid: 402c973010e3de94cbf168f12b79d03d, type: 3}
-  - {fileID: 21300000, guid: 70fb786d64f53fa40bf9a0c87a6888cd, type: 3}
-  - {fileID: 21300000, guid: 5bdc076e69a2bdd4b8ca166fb7825e70, type: 3}
-  - {fileID: 21300000, guid: 1273942d1baeffd4c83542c14904a25a, type: 3}
-  audioClipsSekundaWielka:
-  - {fileID: 8300000, guid: fc108840c20868746a7cdb81418bd8ed, type: 3}
-  - {fileID: 8300000, guid: 5f6ecbc52eba7f142b3f5e5fbb3dc5cb, type: 3}
-  - {fileID: 8300000, guid: 01f3757d352bf174cac06f4d3d200d47, type: 3}
-  - {fileID: 8300000, guid: 0702df9d7284d8c4b8fbb9308d80b3cf, type: 3}
-  - {fileID: 8300000, guid: 4fc4f0e9f590ac84c95b24b1e54bd9c8, type: 3}
-  - {fileID: 8300000, guid: bdb176d2e8b20c04095a356378bc6faf, type: 3}
-  - {fileID: 8300000, guid: 4b5e3f45feef99e4a9a5be99cea9b63e, type: 3}
-  - {fileID: 8300000, guid: 48e59028f96ec734393755e6b976837a, type: 3}
-  - {fileID: 8300000, guid: 19854f2d90471e2498f56c7de4ac4e02, type: 3}
-  - {fileID: 8300000, guid: 02d31018fb994fd438450c3f64a63bc9, type: 3}
-  - {fileID: 8300000, guid: 6fcf43f3ae5ddac408a7b47cbe9b3746, type: 3}
-  - {fileID: 8300000, guid: aa9b3e5437e5e404fa292d043ebe5645, type: 3}
-  - {fileID: 8300000, guid: d51bf6495fce576428ef115ec8251116, type: 3}
-  - {fileID: 8300000, guid: d1eb307d2b6831d4a8fcc95d811a23ee, type: 3}
-  - {fileID: 8300000, guid: d74fdc79fdf98a84b9485323d74ad692, type: 3}
-  - {fileID: 8300000, guid: f1212c32dd0325242a9b92b6c203aaec, type: 3}
-  - {fileID: 8300000, guid: a7fbbd6241a740e4da1da767d7189606, type: 3}
-  - {fileID: 8300000, guid: b2a42bfb34ec1db479142bd7c5c9c2cc, type: 3}
-  - {fileID: 8300000, guid: b1048e366a7831749b2e34f3d57f9990, type: 3}
-  - {fileID: 8300000, guid: 404dc87d4985eb04fb4e9d98a5f868ed, type: 3}
-  - {fileID: 8300000, guid: d9148a16e25952d4e876bcdd09c83061, type: 3}
-  - {fileID: 8300000, guid: 737d3094d53cd0e4d874b5bbd71334c7, type: 3}
-  spritesTercjaMala:
-  - {fileID: 21300000, guid: d8dda7509ef385d41ba94c5a73108c8b, type: 3}
-  - {fileID: 21300000, guid: b74ad0f521e56f247b09d7d443652f6e, type: 3}
-  - {fileID: 21300000, guid: a6e0392ac9b519f4c81362e5c54774ce, type: 3}
-  - {fileID: 21300000, guid: 4a3a7c3fc8f0ac24984b04859ab5e05e, type: 3}
-  - {fileID: 21300000, guid: 80b5364ab040226409d0f0d6e1467107, type: 3}
-  - {fileID: 21300000, guid: 5313a2c58506b6944bed14e7cfd723ea, type: 3}
-  - {fileID: 21300000, guid: 626cbf6af78114846a84cf9e124f8647, type: 3}
-  - {fileID: 21300000, guid: d612d410a53e6c144b2513a8d32d88da, type: 3}
-  - {fileID: 21300000, guid: 352f3b5042e4f8843b427546bafa7412, type: 3}
-  - {fileID: 21300000, guid: dd467cb9518cd854392c70263ecad8fa, type: 3}
-  - {fileID: 21300000, guid: 35efe491869e032418ef0be5f76e30be, type: 3}
-  - {fileID: 21300000, guid: 23780ceed9f0f5643b0c792c5b4ce78e, type: 3}
-  - {fileID: 21300000, guid: 2c93b800bf624bc468c04122190067dc, type: 3}
-  - {fileID: 21300000, guid: 7f50fac3ebb05ec4b9d6d66c07a33d90, type: 3}
-  - {fileID: 21300000, guid: 3cc46f75aab53b744b83824163ba35ee, type: 3}
-  - {fileID: 21300000, guid: 0b9fdea1f2d546a44957645c5e792126, type: 3}
-  - {fileID: 21300000, guid: 70373d1e39d8fa448a6597a9a593a688, type: 3}
-  - {fileID: 21300000, guid: a74e6558f2b4dbe41978ef3fdc4a46d3, type: 3}
-  - {fileID: 21300000, guid: d7a227a4b63b668488630b817c16e37f, type: 3}
-  - {fileID: 21300000, guid: 413dda1a41dacbe47a6324baba84e83c, type: 3}
-  audioClipsTercjaMala:
-  - {fileID: 8300000, guid: 8a3105201139c904e81e7b4a01aff58c, type: 3}
-  - {fileID: 8300000, guid: 89630add4d0e5b343aac9b3b6e4a95ee, type: 3}
-  - {fileID: 8300000, guid: a814e7424c8b8454e9db4dd81cc6b662, type: 3}
-  - {fileID: 8300000, guid: a2e5c94888b36bf4c8002aaea381270d, type: 3}
-  - {fileID: 8300000, guid: 0c180f21e2708b74ea7a7f4c46066ff0, type: 3}
-  - {fileID: 8300000, guid: 91019958770577a438adb3f05124788a, type: 3}
-  - {fileID: 8300000, guid: b80815852405cac4bb9c29e1c384319b, type: 3}
-  - {fileID: 8300000, guid: 15a2b35d46ff6d545a42a0ea843781a5, type: 3}
-  - {fileID: 8300000, guid: ef7356cf1676d54448f5466c85fecf28, type: 3}
-  - {fileID: 8300000, guid: 4402abf73fbc13741b4cae3f78a83121, type: 3}
-  - {fileID: 8300000, guid: f03bc3e95b596ef4dab472ded446af8b, type: 3}
-  - {fileID: 8300000, guid: a11f782c2ae9cd34abd52d280e830255, type: 3}
-  - {fileID: 8300000, guid: 1aa6bd34484cd4f48bd686c5f0ce7060, type: 3}
-  - {fileID: 8300000, guid: 4f2eb2b3d2ecb5e4ea6b658260556ea0, type: 3}
-  - {fileID: 8300000, guid: 8432991352d533e4eafc991b4c3ca551, type: 3}
-  - {fileID: 8300000, guid: 23b8d611594166143bc89055404b2a68, type: 3}
-  - {fileID: 8300000, guid: ad8a7c1d36e5aea498643653496fc799, type: 3}
-  - {fileID: 8300000, guid: acbfbe0614fbe2e43b37f81e1f0138cc, type: 3}
-  - {fileID: 8300000, guid: a92140397ff907e49b7e93012f1c9765, type: 3}
-  - {fileID: 8300000, guid: 90e24fc8e7c183f479348ef3cc1919c6, type: 3}
-  spritesTercjaWielka: []
-  audioClipsTercjaWielka: []
-  spritesKwarta: []
-  audioClipsKwarta: []
-  spritesKwinta: []
-  audioClipsKwinta: []
-  spritesSekstaMala: []
-  audioClipsSekstaMala: []
-  spritesSekstaWielka: []
-  audioClipsSekstaWielka: []
-  spritesSeptymaMala: []
-  audioClipsSeptymaMala: []
-  spritesSeptymaWielka: []
-  audioClipsSeptymaWielka: []
-  spritesOktawa: []
-  audioClipsOktawa: []
---- !u!4 &1862822885
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862822883}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988418897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1418,7 @@ PrefabInstance:
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1862822884}
+      objectReference: {fileID: 1787758201}
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: playSekundaMala
@@ -1636,6 +1553,10 @@ PrefabInstance:
     - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1862822884}
+      objectReference: {fileID: 1787758201}
+    - target: {fileID: 4541196596478725797, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playPryma
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35060ca3b1136104a827aaba67ab3809, type: 3}

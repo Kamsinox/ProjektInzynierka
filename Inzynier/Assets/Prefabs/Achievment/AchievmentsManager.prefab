@@ -89,7 +89,7 @@ MonoBehaviour:
     goal: 100
     unlocked: 0
     purchased: 0
-  - icon: {fileID: 21300000, guid: 82b710089e335de4c82f27e34ae98c89, type: 3}
+  - icon: {fileID: 21300000, guid: b03d02e7fd4adc54f9cac2ded0ecfcbe, type: 3}
     title: Money Money
     description: "Zdob\u0105d\u017A 1000 monet"
     ID: 5
@@ -116,7 +116,7 @@ MonoBehaviour:
     goal: 1000
     unlocked: 0
     purchased: 0
-  - icon: {fileID: 21300000, guid: 827a6390be1728d4995cf6c9bd7f3ebe, type: 3}
+  - icon: {fileID: 21300000, guid: f2e3b0f1413062f4f9e25c7e9e7f5935, type: 3}
     title: Zakupocholik Profili
     description: "Kup WSZYTSKIE zdj\u0119cia profilowe"
     ID: 8
@@ -125,13 +125,13 @@ MonoBehaviour:
     goal: 13
     unlocked: 0
     purchased: 0
-  - icon: {fileID: 21300000, guid: 76c6639af39a7f545a8ed979b971626f, type: 3}
+  - icon: {fileID: 21300000, guid: fc1399acaefc14d46a86d8aca688c90f, type: 3}
     title: "Zakupocholik Background\xF3w"
     description: Kup WSZYTSKIE backgroundy
     ID: 9
     type: Profile
     current: 0
-    goal: 9
+    goal: 6
     unlocked: 0
     purchased: 0
   - icon: {fileID: 21300000, guid: 39081ca5185032f4eb98eb6d7c99d75e, type: 3}
@@ -143,7 +143,7 @@ MonoBehaviour:
     goal: 12
     unlocked: 0
     purchased: 0
-  - icon: {fileID: 21300000, guid: f478e6b470b3fc243acc6e4a2a11c979, type: 3}
+  - icon: {fileID: 21300000, guid: 134fdcba78e119042bac609e444a218e, type: 3}
     title: Konami Code
     description: "Czy go znasz? (wpisz go tam gdzie wszystko si\u0119 zacz\u0119\u0142o)"
     ID: 11
