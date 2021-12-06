@@ -1826,7 +1826,7 @@ MonoBehaviour:
   - {fileID: 1675852942}
   - {fileID: 1668544559}
   - {fileID: 1874173952}
-  highscoresInt: 080000000800000008000000
+  highscoresInt: 0f0000000f0000000a000000
   idCourse: 3
 --- !u!4 &1535418322
 Transform:

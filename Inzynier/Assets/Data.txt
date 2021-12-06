@@ -1,32 +1,29 @@
 <Save FileName="Data">
-  <Coins>3260</Coins>
-  <AllCoins>460</AllCoins>
-  <CurrentProfileImage>Cut Sapphire</CurrentProfileImage>
-  <CurrentBackground>DarkBlue</CurrentBackground>
-  <CurrentFrame>lightblue</CurrentFrame>
+  <Coins>0</Coins>
+  <AllCoins>0</AllCoins>
+  <CurrentProfileImage>
+  </CurrentProfileImage>
+  <CurrentBackground>
+  </CurrentBackground>
+  <CurrentFrame>
+  </CurrentFrame>
   <FreePlayNotesPlayed>0</FreePlayNotesPlayed>
   <Shop>
-    <ProfileImages>
-      <Image>Cut Sapphire</Image>
-    </ProfileImages>
-    <Backgrounds>
-      <Background>DarkBlue</Background>
-    </Backgrounds>
-    <ProfileFrames>
-      <Frame>lightblue</Frame>
-    </ProfileFrames>
+    <ProfileImages />
+    <Backgrounds />
+    <ProfileFrames />
   </Shop>
   <Highscores>
     <EasyCourse>
-      <EasyPrymaOktawa>3</EasyPrymaOktawa>
-      <EasySekunda>5</EasySekunda>
-      <EasyTercja>7</EasyTercja>
-      <EasyKwaKwi>3</EasyKwaKwi>
-      <EasySeksta>4</EasySeksta>
-      <EasySeptyma>2</EasySeptyma>
+      <EasyPrymaOktawa>0</EasyPrymaOktawa>
+      <EasySekunda>0</EasySekunda>
+      <EasyTercja>0</EasyTercja>
+      <EasyKwaKwi>0</EasyKwaKwi>
+      <EasySeksta>0</EasySeksta>
+      <EasySeptyma>0</EasySeptyma>
     </EasyCourse>
     <NormalCourse>
-      <NormalSekunda>1</NormalSekunda>
+      <NormalSekunda>0</NormalSekunda>
       <NormalTercja>0</NormalTercja>
       <NormalKwaKwi>0</NormalKwaKwi>
       <NormalSeksta>0</NormalSeksta>
@@ -49,45 +46,45 @@
   <CoursesProgress>
     <EasyCourseProgress>
       <EasyPrymaOktawaProgress>1</EasyPrymaOktawaProgress>
-      <EasySekundaProgress>1</EasySekundaProgress>
-      <EasyTercjaProgress>1</EasyTercjaProgress>
-      <EasyKwaKwiProgress>1</EasyKwaKwiProgress>
-      <EasySekstaProgress>1</EasySekstaProgress>
-      <EasySeptymaProgress>1</EasySeptymaProgress>
+      <EasySekundaProgress>0</EasySekundaProgress>
+      <EasyTercjaProgress>0</EasyTercjaProgress>
+      <EasyKwaKwiProgress>0</EasyKwaKwiProgress>
+      <EasySekstaProgress>0</EasySekstaProgress>
+      <EasySeptymaProgress>0</EasySeptymaProgress>
     </EasyCourseProgress>
     <NormalCourseProgress>
       <NormalSekundaProgress>1</NormalSekundaProgress>
-      <NormalTercjaProgress>1</NormalTercjaProgress>
-      <NormalKwaKwiProgress>1</NormalKwaKwiProgress>
-      <NormalSekstaProgress>1</NormalSekstaProgress>
-      <NormalSeptymaProgress>1</NormalSeptymaProgress>
-      <NormalPrySekProgress>1</NormalPrySekProgress>
-      <NormalTerKwaProgress>1</NormalTerKwaProgress>
-      <NormalKwiSekProgress>1</NormalKwiSekProgress>
-      <NormalSepOktProgress>1</NormalSepOktProgress>
+      <NormalTercjaProgress>0</NormalTercjaProgress>
+      <NormalKwaKwiProgress>0</NormalKwaKwiProgress>
+      <NormalSekstaProgress>0</NormalSekstaProgress>
+      <NormalSeptymaProgress>0</NormalSeptymaProgress>
+      <NormalPrySekProgress>0</NormalPrySekProgress>
+      <NormalTerKwaProgress>0</NormalTerKwaProgress>
+      <NormalKwiSekProgress>0</NormalKwiSekProgress>
+      <NormalSepOktProgress>0</NormalSepOktProgress>
     </NormalCourseProgress>
     <HardCourseProgress>
       <HardUnoProgress>1</HardUnoProgress>
-      <HardDosProgress>1</HardDosProgress>
-      <HardTresProgress>1</HardTresProgress>
+      <HardDosProgress>0</HardDosProgress>
+      <HardTresProgress>0</HardTresProgress>
     </HardCourseProgress>
     <HardcoreCourseProgress>
       <HardcoreIchiProgress>1</HardcoreIchiProgress>
-      <HardcoerNiProgress>1</HardcoerNiProgress>
+      <HardcoerNiProgress>0</HardcoerNiProgress>
     </HardcoreCourseProgress>
   </CoursesProgress>
   <LevelsProgress>
     <EasyLevelProgress>1</EasyLevelProgress>
-    <NormalLevelProgress>1</NormalLevelProgress>
-    <HardLevelProgress>1</HardLevelProgress>
-    <HardcoreLevelProgress>1</HardcoreLevelProgress>
+    <NormalLevelProgress>0</NormalLevelProgress>
+    <HardLevelProgress>0</HardLevelProgress>
+    <HardcoreLevelProgress>0</HardcoreLevelProgress>
   </LevelsProgress>
   <Achievments>
     <Achievment>
       <Prize>Pearl</Prize>
       <Id>0</Id>
       <Type>Profile</Type>
-      <Current>24</Current>
+      <Current>0</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -95,7 +92,7 @@
       <Prize>Ruby</Prize>
       <Id>1</Id>
       <Type>Profile</Type>
-      <Current>1</Current>
+      <Current>0</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -119,15 +116,15 @@
       <Prize>liany-1</Prize>
       <Id>4</Id>
       <Type>Frame</Type>
-      <Current>100</Current>
-      <IsUnlocked>1</IsUnlocked>
+      <Current>0</Current>
+      <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
     <Achievment>
       <Prize>Squares1</Prize>
       <Id>5</Id>
       <Type>Background</Type>
-      <Current>460</Current>
+      <Current>0</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -151,7 +148,7 @@
       <Prize>suns png</Prize>
       <Id>8</Id>
       <Type>Profile</Type>
-      <Current>1</Current>
+      <Current>0</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -159,7 +156,7 @@
       <Prize>pepe prof</Prize>
       <Id>9</Id>
       <Type>Profile</Type>
-      <Current>1</Current>
+      <Current>0</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -167,7 +164,7 @@
       <Prize>Monster Eye</Prize>
       <Id>10</Id>
       <Type>Profile</Type>
-      <Current>1</Current>
+      <Current>0</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>

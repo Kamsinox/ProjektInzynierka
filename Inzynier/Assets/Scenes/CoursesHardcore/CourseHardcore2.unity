@@ -1251,7 +1251,7 @@ MonoBehaviour:
   - {fileID: 637154819}
   courseLength: 15
   courseProgessText: {fileID: 651371706}
-  addHowManyPoints: 25
+  addHowManyPoints: 20
   multiplier: 5
   textWrong: {fileID: 866569135}
   endLevel: {fileID: 2139910882}

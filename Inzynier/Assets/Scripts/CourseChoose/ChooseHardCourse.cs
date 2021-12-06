@@ -33,13 +33,13 @@ public class ChooseHardCourse : MonoBehaviour
         GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = " ";
     }
     public void onEnter1(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseHard1";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Pryma, sekundy \n i tercja mała";
     }
     public void onEnter2(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseHard2";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Tercja wielka, \n kwarta i kwinta";
     }
     public void onEnter3(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseHard3";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Seksty, septymy \n i oktawa";
     }
     #endregion
 }

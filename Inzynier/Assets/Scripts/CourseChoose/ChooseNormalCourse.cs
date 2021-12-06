@@ -64,31 +64,31 @@ public class ChooseNormalCourse : MonoBehaviour
         GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = " ";
     }
     public void onEnter1(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Sekunda";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Sekunda \n mała i wielka";
     }
     public void onEnter2(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Tercja";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Tercja \n mała i wielka";
     }
     public void onEnter3(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal KwaKwi";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Kwarta \n i kwinta";
     }
     public void onEnter4(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Seksta";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Seksta \n mała i wielka";
     }
     public void onEnter5(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal Septyma";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Septyma \n mała i wielka";
     }
     public void onEnter6(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal PrymaSekunda";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Pryma \n i sekundy";
     }
     public void onEnter7(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal TercjaKwarta";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Tercje \n i kwarta";
     }
     public void onEnter8(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal KwintaSeksta";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Kwinta \n i seksty";
     }
     public void onEnter9(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "CourseNormal SeptymaOktawa";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Septymy \n i oktawa";
     }
     #endregion
 }

@@ -49,13 +49,13 @@ public class UserStatistics : MonoBehaviour
             textArea[5].text = string.Format(percentCalc(percentEasy,44) + "%");
 
             XmlNodeList percentNormal = xmlDocument.GetElementsByTagName("NormalCourse");
-            textArea[6].text = string.Format(percentCalc(percentNormal,44) + "%");
+            textArea[6].text = string.Format(percentCalc(percentNormal,85) + "%");
 
             XmlNodeList percentHard = xmlDocument.GetElementsByTagName("HardCourse");
-            textArea[7].text = string.Format(percentCalc(percentHard,24) + "%");
+            textArea[7].text = string.Format(percentCalc(percentHard,40) + "%");
 
             XmlNodeList percentHardcore = xmlDocument.GetElementsByTagName("HardcoreCourse");
-            textArea[8].text = string.Format(percentCalc(percentHardcore,20) + "%");
+            textArea[8].text = string.Format(percentCalc(percentHardcore,30) + "%");
 
 
             

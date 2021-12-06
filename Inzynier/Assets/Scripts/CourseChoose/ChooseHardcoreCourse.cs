@@ -29,10 +29,10 @@ public class ChooseHardcoreCourse : MonoBehaviour
         GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = " ";
     }
     public void onEnter1(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Are you sure about that?";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Od sekundy małej \n do kwarty";
     }
     public void onEnter2(){
-        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Really?";
+        GameObject.Find("InfoText").GetComponentInChildren<TextMeshProUGUI>().text = "Od kwinty \n do septymy wielkiej";
     }
     #endregion
 }

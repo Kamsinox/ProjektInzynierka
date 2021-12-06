@@ -1239,7 +1239,7 @@ MonoBehaviour:
   star:
   - {fileID: 1527328161}
   - {fileID: 930434985}
-  highscoresInt: 0a0000000a000000
+  highscoresInt: 0f0000000f000000
   idCourse: 4
 --- !u!4 &1396043728
 Transform:
