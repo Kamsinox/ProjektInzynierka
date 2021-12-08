@@ -58,7 +58,6 @@ public class ShopSystem : MonoBehaviour
                 if(imageName == nazwyProfil[i])
                 {
                     destroyItem(j,1);
-                    Debug.Log("Znazłem Image dla i="+i+", j="+j);
                 }
             }
         }
@@ -81,7 +80,6 @@ public class ShopSystem : MonoBehaviour
                 if(backgroundName == nazwyBackgorund[i])
                 {
                     destroyItem(j,2);
-                    Debug.Log("Znazłem Background dla i="+i+", j="+j);
                 }
             }
         }
@@ -104,7 +102,6 @@ public class ShopSystem : MonoBehaviour
                 if(frameName == nazwyFrame[i])
                 {
                     destroyItem(j,3);
-                    Debug.Log("Znazłem Frame dla i="+i+", j="+j);
                 }
             }
         }
@@ -143,7 +140,7 @@ public class ShopSystem : MonoBehaviour
         //zapisywanie do xml nazwy buttonów do Image
 
         string imageName = itemsProfile[id].GetComponentInChildren<Button>().GetComponent<Image>().sprite.name;
-        Debug.Log("Zapisano do pliku: "+imageName);
+        //Debug.Log("Zapisano do pliku: "+imageName);
 
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))
@@ -195,7 +192,7 @@ public class ShopSystem : MonoBehaviour
         //zapisywanie do xml nazwy buttonów do Image
 
         string backgroundName = itemsBackground[id].GetComponentInChildren<Button>().GetComponent<Image>().sprite.name;
-        Debug.Log("Zapisano do pliku: "+backgroundName);
+        //Debug.Log("Zapisano do pliku: "+backgroundName);
 
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))
@@ -247,7 +244,7 @@ public class ShopSystem : MonoBehaviour
         //zapisywanie do xml nazwy buttonów do Image
 
         string frameName = itemsFrame[id].GetComponentInChildren<Button>().GetComponent<Image>().sprite.name;
-        Debug.Log("Zapisano do pliku: "+frameName);
+        //Debug.Log("Zapisano do pliku: "+frameName);
 
         string filePath = Application.dataPath + "/Data.txt";
         if(File.Exists(filePath))

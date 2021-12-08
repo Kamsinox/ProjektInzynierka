@@ -30,102 +30,87 @@ public class ProfileManager : MonoBehaviour
 
     private void loadScore(string filePath)
     {
-        //ścieżka do pliku z danymi
-        
-            //załadowanie pliku
-            XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load(filePath);
+        //załadowanie pliku
+        XmlDocument xmlDocument = new XmlDocument();
+        xmlDocument.Load(filePath);
 
-            //szukamy po tagu w pliku
-            XmlNodeList coins = xmlDocument.GetElementsByTagName("Coins");
+        //szukamy po tagu w pliku
+        XmlNodeList coins = xmlDocument.GetElementsByTagName("Coins");
 
-            //pobieramy szukaną zmienną i zamieniamy na string
-            text = coins[0].InnerText.ToString();
+        //pobieramy szukaną zmienną i zamieniamy na string
+        text = coins[0].InnerText.ToString();
 
-            //wyświetlanie do odpowiedniego gameobject na scenie
-            scoreTxt.text = string.Format("Monety: {0}",(text));
-            
-            /*
-            //może się przydać
-            foreach (TMP_Text texty in scoreTxt)
-            {
-                string newText = texty.GetComponent<TMPro.TextMeshProUGUI>().text;
-                newText = string.Format("Monety: {0}",(text));
-                texty.text = newText;
-            }
-            */
+        //wyświetlanie do odpowiedniego gameobject na scenie
+        scoreTxt.text = string.Format("Monety: {0}",(text));
         
     }
 
     private void loadProfileImage(string filePath)
     {
-            XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load(filePath);
+        XmlDocument xmlDocument = new XmlDocument();
+        xmlDocument.Load(filePath);
 
-            XmlNodeList profileImageElement = xmlDocument.GetElementsByTagName("CurrentProfileImage");
-            text = profileImageElement[0].InnerText.ToString();
-            //Debug.Log("Nazwa image profilu: "+text);
+        XmlNodeList profileImageElement = xmlDocument.GetElementsByTagName("CurrentProfileImage");
+        text = profileImageElement[0].InnerText.ToString();
 
-            //pobieranie tablicy wszystkich assetów znajdujących się w pliku resources/profileimages
-            Object[] data = Resources.LoadAll("ProfileImages",typeof(Sprite));
+        //pobieranie tablicy wszystkich assetów znajdujących się w pliku resources/profileimages
+        Object[] data = Resources.LoadAll("ProfileImages",typeof(Sprite));
 
-            for(int i=0; i<data.Length; i++)
-            { 
-                //przeszukujemy całą tablicę, dopóki nie znajdziemy odpowiedniej nazwy
-                //dzięki czemu możemy potem zamienić image
-                if(text == data[i].name)
-                {
-                    Image newSprite = profileImage.GetComponent<Image>();
-                    newSprite.sprite = (Sprite)data[i];
-                }
+        for(int i=0; i<data.Length; i++)
+        { 
+            //przeszukujemy całą tablicę, dopóki nie znajdziemy odpowiedniej nazwy
+            //dzięki czemu możemy potem zamienić image
+            if(text == data[i].name)
+            {
+                Image newSprite = profileImage.GetComponent<Image>();
+                newSprite.sprite = (Sprite)data[i];
             }
+        }
     }
 
     private void loadBackground(string filePath)
     {
-            XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load(filePath);
+        XmlDocument xmlDocument = new XmlDocument();
+        xmlDocument.Load(filePath);
 
-            XmlNodeList backgroundElement = xmlDocument.GetElementsByTagName("CurrentBackground");
-            text = backgroundElement[0].InnerText.ToString();
-            //Debug.Log("Nazwa background: "+text);
+        XmlNodeList backgroundElement = xmlDocument.GetElementsByTagName("CurrentBackground");
+        text = backgroundElement[0].InnerText.ToString();
 
-            Object[] data = Resources.LoadAll("Backgrounds",typeof(Sprite));
-            for(int i=0; i<data.Length; i++)
-            { 
-                if(text == data[i].name)
-                {
-                    Image newSprite = backgroundImage.GetComponent<Image>();
-                    newSprite.sprite = (Sprite)data[i];
-                }
+        Object[] data = Resources.LoadAll("Backgrounds",typeof(Sprite));
+        for(int i=0; i<data.Length; i++)
+        { 
+            if(text == data[i].name)
+            {
+                Image newSprite = backgroundImage.GetComponent<Image>();
+                newSprite.sprite = (Sprite)data[i];
             }
+        }
     }
 
     private void loadFrame(string filePath)
     {
-            XmlDocument xmlDocument = new XmlDocument();
-            xmlDocument.Load(filePath);
+        XmlDocument xmlDocument = new XmlDocument();
+        xmlDocument.Load(filePath);
 
-            XmlNodeList frameElement = xmlDocument.GetElementsByTagName("CurrentFrame");
-            text = frameElement[0].InnerText.ToString();
-            //Debug.Log("Nazwa frame: "+text);
+        XmlNodeList frameElement = xmlDocument.GetElementsByTagName("CurrentFrame");
+        text = frameElement[0].InnerText.ToString();
 
-            Object[] data = Resources.LoadAll("Frames",typeof(Sprite));
-            for(int i=0; i<data.Length; i++)
-            { 
-                if(text == data[i].name)
-                {
-                    Image newSprite = frameImage.GetComponent<Image>();
-                    newSprite.sprite = (Sprite)data[i];
-                }
+        Object[] data = Resources.LoadAll("Frames",typeof(Sprite));
+        for(int i=0; i<data.Length; i++)
+        { 
+            if(text == data[i].name)
+            {
+                Image newSprite = frameImage.GetComponent<Image>();
+                newSprite.sprite = (Sprite)data[i];
             }
+        }
     }
 
     public void changeProfile(Image newImage)
     {
         Image newSprite = profileImage.GetComponent<Image>();
         newSprite.sprite = newImage.sprite;
-        Debug.Log("Nazwa nowego profilu: "+newImage.sprite.name);
+        //Debug.Log("Nazwa nowego profilu: "+newImage.sprite.name);
 
         string filePath = Application.dataPath + "/Data.txt";
 
@@ -147,7 +132,7 @@ public class ProfileManager : MonoBehaviour
     {
         Image newSprite = backgroundImage.GetComponent<Image>();
         newSprite.sprite = newImage.sprite;
-        Debug.Log("Nazwa backgroundu: "+newImage.sprite.name);
+        //Debug.Log("Nazwa backgroundu: "+newImage.sprite.name);
 
         string filePath = Application.dataPath + "/Data.txt";
 
@@ -169,7 +154,7 @@ public class ProfileManager : MonoBehaviour
     {
         Image newSprite = frameImage.GetComponent<Image>();
         newSprite.sprite = newImage.sprite;
-        Debug.Log("Nazwa frame: "+newImage.sprite.name);
+        //Debug.Log("Nazwa frame: "+newImage.sprite.name);
 
         string filePath = Application.dataPath + "/Data.txt";
 

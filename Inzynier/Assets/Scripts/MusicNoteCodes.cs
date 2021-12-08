@@ -33,7 +33,7 @@ public class MusicNoteCodes : MonoBehaviour
     void Update()
     {
         #region granieNaKlawiaturze
-        //tak wiem if-y na potęge, ale inaczej się nie da
+        //if-town
         if (Input.GetKeyDown(KeyCode.A))       C_Note_Play();
         if (Input.GetKeyDown(KeyCode.W))       CS_Note_Play();
         if (Input.GetKeyDown(KeyCode.S))       D_Note_Play();

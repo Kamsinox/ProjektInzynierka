@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
-using TMPro;
 using System.Xml;
 using System.IO;
 
@@ -37,7 +35,6 @@ public class GetAchievmentPrize : MonoBehaviour
                     profileImage.InnerText = prizeName;
                     profileImageTag[0].AppendChild(profileImage);
                     achievmentsXml[0].ChildNodes[idAch].ChildNodes[5].InnerText = "1";
-                    Debug.Log("Nagroda: "+prizeName+", typu: "+type+", dla i = "+idAch+", została zapisana");
                 break;
 
                 case "Background":
@@ -46,7 +43,6 @@ public class GetAchievmentPrize : MonoBehaviour
                     backgroundElement.InnerText = prizeName;
                     backgroundTag[0].AppendChild(backgroundElement);
                     achievmentsXml[0].ChildNodes[idAch].ChildNodes[5].InnerText = "1";
-                    Debug.Log("Nagroda: "+prizeName+", typu: "+type+", dla i = "+idAch+", została zapisana");
                 break;
 
                 case "Frame":
@@ -55,7 +51,6 @@ public class GetAchievmentPrize : MonoBehaviour
                     profileFrame.InnerText = prizeName;
                     profileFrameTag[0].AppendChild(profileFrame);
                     achievmentsXml[0].ChildNodes[idAch].ChildNodes[5].InnerText = "1";
-                    Debug.Log("Nagroda: "+prizeName+", typu: "+type+", dla i = "+idAch+", została zapisana");
                 break;
 
                 default: Debug.Log("Błąd przy odczytywaniu typu nagrody"); break;

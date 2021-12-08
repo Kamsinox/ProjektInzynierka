@@ -117,8 +117,8 @@ MonoBehaviour:
     unlocked: 0
     purchased: 0
   - icon: {fileID: 21300000, guid: f2e3b0f1413062f4f9e25c7e9e7f5935, type: 3}
-    title: Zakupocholik Profili
-    description: "Kup WSZYTSKIE zdj\u0119cia profilowe"
+    title: Zakupoholik Profili
+    description: "Kup WSZYSTKIE zdj\u0119cia profilowe"
     ID: 8
     type: Profile
     current: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
     unlocked: 0
     purchased: 0
   - icon: {fileID: 21300000, guid: fc1399acaefc14d46a86d8aca688c90f, type: 3}
-    title: "Zakupocholik Background\xF3w"
-    description: Kup WSZYTSKIE backgroundy
+    title: "Zakupoholik Background\xF3w"
+    description: Kup WSZYSTKIE backgroundy
     ID: 9
     type: Profile
     current: 0
@@ -135,8 +135,8 @@ MonoBehaviour:
     unlocked: 0
     purchased: 0
   - icon: {fileID: 21300000, guid: 39081ca5185032f4eb98eb6d7c99d75e, type: 3}
-    title: Zakupocholik Ramek
-    description: Kup WSZYTSKIE ramki
+    title: Zakupoholik Ramek
+    description: Kup WSZYSTKIE ramki
     ID: 10
     type: Profile
     current: 0

@@ -84,7 +84,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesPryma[randomNumber];
             audioButton.clip = audioClipsPryma[randomNumber];
             audioButton.Play();
@@ -108,7 +107,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesSekundaMala[randomNumber];
             audioButton.clip = audioClipsSekundaMala[randomNumber];
             audioButton.Play();
@@ -132,7 +130,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesSekundaWielka[randomNumber];
             audioButton.clip = audioClipsSekundaWielka[randomNumber];
             audioButton.Play();
@@ -156,7 +153,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesTercjaMala[randomNumber];
             audioButton.clip = audioClipsTercjaMala[randomNumber];
             audioButton.Play();
@@ -180,7 +176,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesTercjaWielka[randomNumber];
             audioButton.clip = audioClipsTercjaWielka[randomNumber];
             audioButton.Play();
@@ -204,7 +199,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesKwarta[randomNumber];
             audioButton.clip = audioClipsKwarta[randomNumber];
             audioButton.Play();
@@ -228,7 +222,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesKwinta[randomNumber];
             audioButton.clip = audioClipsKwinta[randomNumber];
             audioButton.Play();
@@ -252,7 +245,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesSekstaMala[randomNumber];
             audioButton.clip = audioClipsSekstaMala[randomNumber];
             audioButton.Play();
@@ -276,7 +268,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesSekstaWielka[randomNumber];
             audioButton.clip = audioClipsSekstaWielka[randomNumber];
             audioButton.Play();
@@ -300,7 +291,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesSeptymaMala[randomNumber];
             audioButton.clip = audioClipsSeptymaMala[randomNumber];
             audioButton.Play();
@@ -324,7 +314,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesSeptymaWielka[randomNumber];
             audioButton.clip = audioClipsSeptymaWielka[randomNumber];
             audioButton.Play();
@@ -348,7 +337,6 @@ public class SpirteAudioClipManager : MonoBehaviour
         if(image is null || audioButton is null) Debug.Log("Object o nazwie Immage lub AudioSource nie został znaleziony");
         else 
         {
-            //Debug.Log("Wylosowany nr: "+randomNumber);
             image.sprite = spritesOktawa[randomNumber];
             audioButton.clip = audioClipsOktawa[randomNumber];
             audioButton.Play();

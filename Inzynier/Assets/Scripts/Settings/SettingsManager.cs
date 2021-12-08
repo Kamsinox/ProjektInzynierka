@@ -35,8 +35,10 @@ public class SettingsManager : MonoBehaviour
     {
         if(PlayerPrefs.GetInt("fullscreen") == 1) fullscreenToggle.isOn = true;
         else fullscreenToggle.isOn = false;
+
         startResolutions();
         setSlider();
+
         resDropdown.value = PlayerPrefs.GetInt("resolution");
         slider.value = PlayerPrefs.GetFloat("volume", sliderValue);
         qualDropdown.value = PlayerPrefs.GetInt("quality");
@@ -53,11 +55,6 @@ public class SettingsManager : MonoBehaviour
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
-
-            // if(resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
-            // {
-            //     currentResIndex = i;
-            // }
         }
 
         resDropdown.AddOptions(options);

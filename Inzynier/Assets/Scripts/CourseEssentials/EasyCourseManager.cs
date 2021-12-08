@@ -52,11 +52,8 @@ public class EasyCourseManager : MonoBehaviour
         loadListOfLevels();
         levelManager();
         
-        Debug.Log("wybrano kurs trunosc: " + courseID);
-        Debug.Log("wybrano kurs nr: " + currentCourse);
-        
-        //Sprite dos = (Sprite)AssetDatabase.LoadAssetAtPath("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_3.png", typeof(Sprite));
-        //Sprite uno = Resources.Load <Sprite> ("Assets/ScaleImages/TwoNotes/CourseEasy/Kwinta/Level_1_1.png");
+        //Debug.Log("wybrano kurs trunosc: " + courseID);
+        //Debug.Log("wybrano kurs nr: " + currentCourse);
     }
 
     #region XMLFun
@@ -316,9 +313,8 @@ public class EasyCourseManager : MonoBehaviour
             }
 
             xmlDocument.Save(filePath);
-
-            Debug.Log("Pronuje przesłać wynik: "+(goodAnswers-highscoreInt)+", do: "+(courseID-1).ToString());
             
+            //zabezpieczenie przed dodaniem ujemnego wyniku do postępu osiągnięcia
             if(goodAnswers - highscoreInt >= 0)
             AchievmentsManager.achievmentsManagerInstance.addAchievmentProgress((courseID-1).ToString(),goodAnswers-highscoreInt);
         }
@@ -351,7 +347,6 @@ public class EasyCourseManager : MonoBehaviour
 
 
     #region searchForLevel_()
-    //odpalanie funkcji z innego skryptu
     public void searchForLevelPryma()
     {
         skryptSpriteAudio = GameObject.FindGameObjectWithTag("AudioTag").GetComponent<SpirteAudioClipManager>();
