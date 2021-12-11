@@ -22,14 +22,6 @@ public class SettingsManager : MonoBehaviour
 
     public Toggle fullscreenToggle;
 
-    public void SetVolume (float volume)
-    {
-        audioMixer.SetFloat("volume", Mathf.Log10(volume)*20);
-
-        PlayerPrefs.SetFloat("volume", volume);
-        volumeVal.text = Math.Round(PlayerPrefs.GetFloat("volume")*100,0).ToString();
-        PlayerPrefs.Save();
-    } 
 
     void Start()
     {
@@ -43,6 +35,15 @@ public class SettingsManager : MonoBehaviour
         slider.value = PlayerPrefs.GetFloat("volume", sliderValue);
         qualDropdown.value = PlayerPrefs.GetInt("quality");
     }
+
+    public void SetVolume (float volume)
+    {
+        audioMixer.SetFloat("volume", Mathf.Log10(volume)*20);
+
+        PlayerPrefs.SetFloat("volume", volume);
+        volumeVal.text = Math.Round(PlayerPrefs.GetFloat("volume")*100,0).ToString();
+        PlayerPrefs.Save();
+    } 
 
     private void startResolutions()
     {

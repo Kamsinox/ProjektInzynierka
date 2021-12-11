@@ -6,54 +6,54 @@ public class ChooseNormalCourse : MonoBehaviour
 {
     void Start()
     {
-        EasyCourseManager.courseID = 2;
+        CourseManager.courseID = 2;
     }
  
     #region loadScenes
     public void loadSceneKursNormal1()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSekunda");
-        EasyCourseManager.currentCourse = 0;
+        CourseManager.currentCourse = 0;
     }
     public void loadSceneKursNormal2()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalTercja");
-        EasyCourseManager.currentCourse = 1;
+        CourseManager.currentCourse = 1;
     }
     public void loadSceneKursNormal3()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalKwaKwi");
-        EasyCourseManager.currentCourse = 2;
+        CourseManager.currentCourse = 2;
     }
     public void loadSceneKursNormal4()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSeksta");
-        EasyCourseManager.currentCourse = 3;
+        CourseManager.currentCourse = 3;
     }
     public void loadSceneKursNormal5()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSeptyma");
-        EasyCourseManager.currentCourse = 4;
+        CourseManager.currentCourse = 4;
     }
     public void loadSceneKursNormal6()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalPrymaSekunda");
-        EasyCourseManager.currentCourse = 5;
+        CourseManager.currentCourse = 5;
     }
     public void loadSceneKursNormal7()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalTercjaKwarta");
-        EasyCourseManager.currentCourse = 6;
+        CourseManager.currentCourse = 6;
     }
     public void loadSceneKursNormal8()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalKwintaSeksta");
-        EasyCourseManager.currentCourse = 7;
+        CourseManager.currentCourse = 7;
     }
     public void loadSceneKursNormal9()
     {
         SceneManager.LoadScene(sceneName:"CourseNormalSeptymaOktawa");
-        EasyCourseManager.currentCourse = 8;
+        CourseManager.currentCourse = 8;
     }
     #endregion
 

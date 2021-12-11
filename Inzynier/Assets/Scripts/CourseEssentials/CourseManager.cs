@@ -5,7 +5,7 @@ using UnityEngine;
 using System.Xml;
 using System.IO;
 
-public class EasyCourseManager : MonoBehaviour
+public class CourseManager : MonoBehaviour
 {
     //NAZWY POZIOMÓW (czyli obiektów levels) MA ZNACZENIE
     //MUSZĄ BYĆ NAZWANE W ODPOWIEDNI SPOSÓB, INACZEJ KURS NIE ZADZIAŁA
@@ -51,9 +51,6 @@ public class EasyCourseManager : MonoBehaviour
         courseProgess = 0;
         loadListOfLevels();
         levelManager();
-        
-        //Debug.Log("wybrano kurs trunosc: " + courseID);
-        //Debug.Log("wybrano kurs nr: " + currentCourse);
     }
 
     #region XMLFun

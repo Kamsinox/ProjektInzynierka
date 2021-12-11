@@ -6,39 +6,39 @@ public class ChooseEasyCourse : MonoBehaviour
 {
     void Start()
     {
-        EasyCourseManager.courseID = 1;
+        CourseManager.courseID = 1;
     }
 
     #region loadScenes
     public void loadSceneKursEasy1()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyPryOkt");
-        EasyCourseManager.currentCourse = 0;
+        CourseManager.currentCourse = 0;
     }
     public void loadSceneKursEasy2()
     {
         SceneManager.LoadScene(sceneName:"CourseEasySekunda");
-        EasyCourseManager.currentCourse = 1;
+        CourseManager.currentCourse = 1;
     }
     public void loadSceneKursEasy3()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyTercja");
-        EasyCourseManager.currentCourse = 2;
+        CourseManager.currentCourse = 2;
     }
     public void loadSceneKursEasy4()
     {
         SceneManager.LoadScene(sceneName:"CourseEasyKwaKwi");
-        EasyCourseManager.currentCourse = 3;
+        CourseManager.currentCourse = 3;
     }
     public void loadSceneKursEasy5()
     {
         SceneManager.LoadScene(sceneName:"CourseEasySeksta");
-        EasyCourseManager.currentCourse = 4;
+        CourseManager.currentCourse = 4;
     }
     public void loadSceneKursEasy6()
     {
         SceneManager.LoadScene(sceneName:"CourseEasySeptyma");
-        EasyCourseManager.currentCourse = 5;
+        CourseManager.currentCourse = 5;
     }
     #endregion
 

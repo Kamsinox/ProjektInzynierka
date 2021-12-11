@@ -11,22 +11,18 @@ public class MainMenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"MenuChoose");
     }
-
     public void loadShop()
     {
         SceneManager.LoadScene(sceneName:"Shop");
     }
-
     public void loadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-
     public void loadSettings()
     {
         SceneManager.LoadScene("Settings");
     }
-
     public void exitApp()
     {
         Application.Quit();

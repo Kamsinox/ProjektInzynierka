@@ -6,24 +6,24 @@ public class ChooseHardCourse : MonoBehaviour
 {
     void Start()
     {
-        EasyCourseManager.courseID = 3;
+        CourseManager.courseID = 3;
     }
 
     #region loadScenes
     public void loadSceneKursHard1()
     {
         SceneManager.LoadScene(sceneName:"CourseHard1");
-        EasyCourseManager.currentCourse = 0;
+        CourseManager.currentCourse = 0;
     }
     public void loadSceneKursHard2()
     {
         SceneManager.LoadScene(sceneName:"CourseHard2");
-        EasyCourseManager.currentCourse = 1;
+        CourseManager.currentCourse = 1;
     }
     public void loadSceneKursHard3()
     {
         SceneManager.LoadScene(sceneName:"CourseHard3");
-        EasyCourseManager.currentCourse = 2;
+        CourseManager.currentCourse = 2;
     }
     #endregion
 
