@@ -1078,7 +1078,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1056922503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 267765f508a00844da0100d0943c87c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 881ff8070c177a04daf74dee46945a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   - {fileID: 1727758632}
   courseLength: 10
   courseProgessText: {fileID: 1218374021}
-  addHowManyPoints: 10
+  addHowManyPoints: 5
   multiplier: 2
   textWrong: {fileID: 394795714}
   endLevel: {fileID: 1834595803}

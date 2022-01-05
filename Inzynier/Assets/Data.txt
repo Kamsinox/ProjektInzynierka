@@ -1,23 +1,27 @@
 <Save FileName="Data">
-  <Coins>0</Coins>
-  <AllCoins>0</AllCoins>
-  <CurrentProfileImage>
-  </CurrentProfileImage>
+  <Coins>60</Coins>
+  <AllCoins>210</AllCoins>
+  <CurrentProfileImage>sussy prof</CurrentProfileImage>
   <CurrentBackground>
   </CurrentBackground>
-  <CurrentFrame>
-  </CurrentFrame>
-  <FreePlayNotesPlayed>0</FreePlayNotesPlayed>
+  <CurrentFrame>liany-1</CurrentFrame>
+  <FreePlayNotesPlayed>41</FreePlayNotesPlayed>
   <Shop>
-    <ProfileImages />
+    <ProfileImages>
+      <Image>Coal</Image>
+      <Image>sussy prof</Image>
+    </ProfileImages>
     <Backgrounds />
-    <ProfileFrames />
+    <ProfileFrames>
+      <Frame>pink</Frame>
+      <Frame>liany-1</Frame>
+    </ProfileFrames>
   </Shop>
   <Highscores>
     <EasyCourse>
-      <EasyPrymaOktawa>0</EasyPrymaOktawa>
-      <EasySekunda>0</EasySekunda>
-      <EasyTercja>0</EasyTercja>
+      <EasyPrymaOktawa>5</EasyPrymaOktawa>
+      <EasySekunda>6</EasySekunda>
+      <EasyTercja>5</EasyTercja>
       <EasyKwaKwi>0</EasyKwaKwi>
       <EasySeksta>0</EasySeksta>
       <EasySeptyma>0</EasySeptyma>
@@ -46,9 +50,9 @@
   <CoursesProgress>
     <EasyCourseProgress>
       <EasyPrymaOktawaProgress>1</EasyPrymaOktawaProgress>
-      <EasySekundaProgress>0</EasySekundaProgress>
-      <EasyTercjaProgress>0</EasyTercjaProgress>
-      <EasyKwaKwiProgress>0</EasyKwaKwiProgress>
+      <EasySekundaProgress>1</EasySekundaProgress>
+      <EasyTercjaProgress>1</EasyTercjaProgress>
+      <EasyKwaKwiProgress>1</EasyKwaKwiProgress>
       <EasySekstaProgress>0</EasySekstaProgress>
       <EasySeptymaProgress>0</EasySeptymaProgress>
     </EasyCourseProgress>
@@ -84,7 +88,7 @@
       <Prize>Pearl</Prize>
       <Id>0</Id>
       <Type>Profile</Type>
-      <Current>0</Current>
+      <Current>11</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -116,15 +120,15 @@
       <Prize>liany-1</Prize>
       <Id>4</Id>
       <Type>Frame</Type>
-      <Current>0</Current>
-      <IsUnlocked>0</IsUnlocked>
-      <Purchased>0</Purchased>
+      <Current>100</Current>
+      <IsUnlocked>1</IsUnlocked>
+      <Purchased>1</Purchased>
     </Achievment>
     <Achievment>
       <Prize>Squares1</Prize>
       <Id>5</Id>
       <Type>Background</Type>
-      <Current>0</Current>
+      <Current>210</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -132,7 +136,7 @@
       <Prize>Silver Nugget</Prize>
       <Id>6</Id>
       <Type>Profile</Type>
-      <Current>0</Current>
+      <Current>41</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -140,7 +144,7 @@
       <Prize>Topaz</Prize>
       <Id>7</Id>
       <Type>Profile</Type>
-      <Current>0</Current>
+      <Current>41</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -148,7 +152,7 @@
       <Prize>suns png</Prize>
       <Id>8</Id>
       <Type>Profile</Type>
-      <Current>0</Current>
+      <Current>1</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -164,7 +168,7 @@
       <Prize>Monster Eye</Prize>
       <Id>10</Id>
       <Type>Profile</Type>
-      <Current>0</Current>
+      <Current>1</Current>
       <IsUnlocked>0</IsUnlocked>
       <Purchased>0</Purchased>
     </Achievment>
@@ -172,9 +176,9 @@
       <Prize>sussy prof</Prize>
       <Id>11</Id>
       <Type>Profile</Type>
-      <Current>0</Current>
-      <IsUnlocked>0</IsUnlocked>
-      <Purchased>0</Purchased>
+      <Current>1</Current>
+      <IsUnlocked>1</IsUnlocked>
+      <Purchased>1</Purchased>
     </Achievment>
   </Achievments>
 </Save>

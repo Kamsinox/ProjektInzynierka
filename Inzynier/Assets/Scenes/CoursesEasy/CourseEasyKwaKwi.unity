@@ -470,17 +470,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4850458040087288392, guid: d18529cb1d89e0b4ba59e5e9e0fe4c2f, type: 3}
   m_PrefabInstance: {fileID: 4850458039576927669}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &599558143 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4850458040087288394, guid: d18529cb1d89e0b4ba59e5e9e0fe4c2f, type: 3}
-  m_PrefabInstance: {fileID: 4850458039576927669}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &764189606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,17 +911,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1396006464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 267765f508a00844da0100d0943c87c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 881ff8070c177a04daf74dee46945a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
   - {fileID: 1148510952}
   - {fileID: 1772365122}
   courseLength: 8
-  courseProgessText: {fileID: 599558143}
+  courseProgessText: {fileID: 4850458039576927670}
   addHowManyPoints: 10
   multiplier: 2
-  textWrong: {fileID: 2019404613}
+  textWrong: {fileID: 2643392196166196522}
   endLevel: {fileID: 261465042}
   finalScoreText: {fileID: 261465040}
 --- !u!114 &1396006466
@@ -1333,11 +1322,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772365122}
   m_CullTransparentMesh: 1
---- !u!1 &2019404613 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2643392194426910316, guid: fedba9b674a9df643920f0df8c070d95, type: 3}
-  m_PrefabInstance: {fileID: 2643392196166196521}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2019404614 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2643392194426910319, guid: fedba9b674a9df643920f0df8c070d95, type: 3}
@@ -1565,6 +1549,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fedba9b674a9df643920f0df8c070d95, type: 3}
+--- !u!1 &2643392196166196522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2643392194426910316, guid: fedba9b674a9df643920f0df8c070d95, type: 3}
+  m_PrefabInstance: {fileID: 2643392196166196521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4850458039576927669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1662,3 +1651,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d18529cb1d89e0b4ba59e5e9e0fe4c2f, type: 3}
+--- !u!114 &4850458039576927670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4850458040087288394, guid: d18529cb1d89e0b4ba59e5e9e0fe4c2f, type: 3}
+  m_PrefabInstance: {fileID: 4850458039576927669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
