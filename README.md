@@ -1,7 +1,7 @@
 # Praca inżynierska - Aplikacja do kształcenia słuchu muzycznego
 
 ***Wstęp*** </br>
-Aplikacja powstała jako praca inżynierska dla Politechniki Lubelskiej w 2021/2022 roku. 
+Aplikacja powstała jako praca inżynierska dla Politechniki Lubelskiej w 2021/2022 roku. </br>
 Jej autorami był Kamil Szafran (ja) oraz Aleksandra Walaszek. 
 Wybór na zrealizowanie danej pracy padł na silnik Unity, jako że aplikacja korzysta z elementów grywalizacji, a także moja chęć do nauki pracy w danym środowisku.
 W przyszłości chciałbym zająć się tworzeniem gier komputerowych, więc warto było skorzytsać z okazji, żeby mieć motywację do pracy z Unity.
@@ -24,7 +24,7 @@ Zagadki te wyglądają w następujący sposób:
 Jak to wygląda w aplikacji? 
 -
 ***Wybór poziomu trudności*** </br>
-Do wyboru mamy 4 poziomy trudności: łatwy, średni, trudny i hardcore. Ostatnia nuta przenosi nas do tzw. "Free Play" (o tym póżniej).
+Do wyboru mamy 4 poziomy trudności: łatwy, średni, trudny i hardcore. Ostatnia nuta przenosi nas do tzw. "Free Play" (o tym póżniej). </br>
 ![obraz](https://user-images.githubusercontent.com/92575198/155108628-a1da5047-781a-4af7-86b1-687a1e1ef318.png)
 
 
