@@ -1,5 +1,8 @@
 # Praca inżynierska - Aplikacja do kształcenia słuchu muzycznego
 
+![obraz](https://user-images.githubusercontent.com/92575198/165502066-533d1ea7-e43a-48f8-ab85-deb4f9dcb2cc.png)
+
+
 ***Wstęp*** </br>
 Aplikacja powstała jako praca inżynierska dla Politechniki Lubelskiej w 2021/2022 roku. </br>
 Jej autorami był Kamil Szafran (ja) oraz Aleksandra Walaszek. 
