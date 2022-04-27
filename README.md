@@ -57,13 +57,49 @@ Poziom trudny
 ![obraz](https://user-images.githubusercontent.com/92575198/155110410-e52a14f3-6d4b-4c95-852e-6e44697a896e.png)
 
 ***Ekran końcowy*** </br>
-Jak wcześniej wspomniałem na konću wyświetlany jest podsumowanie danego kursu. </br>
+Jak wcześniej wspomniałem na konću wyświetlany jest podsumowanie danego kursu. 
+</br>
 ![obraz](https://user-images.githubusercontent.com/92575198/155110670-4a7f6ac3-a658-4275-9fd7-8f245cf73d3f.png)
 
 
 Grywalizacja
 -
-dokonczyc mowic o gryazliacji czyli:  monety, osiągnięcia, odblokowaywanie, highscores itd, itp
+***Monety*** </br>
+Aplikacja posiada elementy grywalizacji, mające na celu uatrakcyjnienie korzystania z niej.
+W tym celu został użyty system monet. Użytkownik zdobywa je poprzez odpowiadanie poprawnie na zagadki muzyczne.
+Im więcej poprawnych odpowiedzi uzdielonych w pojedynczym kursie, tym więcej zostaje ich przyznanych. </br>
+Gdzie można je zatem wykorzystać? </br>
+W aplikacji istnieje sklep. W nim użytkownik ma możliwość zakupienia za monety trzech rzeczy:
+- zdjęcia profilowe
+- tło do aplikacji
+- ramki profilowe </br>
+
+![obraz](https://user-images.githubusercontent.com/92575198/165498184-3f0317b0-e3a7-4566-8a45-61304370e10c.png)
+
+***Osiągnięcia*** </br>
+Niektóre ramki,tła i zdjęcia profilowe nie są możliwe do zakupienia za pomocą monet.
+Można je odblokować jedynie za pomocą osiągnięć. Użytkownik może zobaczyć swoje postępy widoczne na pasku na dole.
+Kiedy założenia zostaną spełnione zostaje odblokowana możliwość odebrania nagrody i przypisania jej do profilu użytkownika. </br>
+![obraz](https://user-images.githubusercontent.com/92575198/165498904-792c493f-7107-4470-a921-24d062be3da5.png)
+
+***Profil użytkownika*** </br>
+Wszelkie odblokowane rzeczy, czy to poprzez ich zakupienie w sklepie czy oblokowanie osiągnięcia,
+użytkownik może ustawić w profilu użytkownika. </br>
+![obraz](https://user-images.githubusercontent.com/92575198/165500289-b2481642-d496-4dae-9189-7d7bcba2c4d4.png)
+
+***Najlepze wyniki*** </br>
+Każdy kurs składa się ze stałej liczby losowych zagadek. 
+W momencie gdy użytkownik odpowie poprawnie na wszystkie zagadki w danym kurie zostaje ona oznaczona gwiazdką. </br>
+![obraz](https://user-images.githubusercontent.com/92575198/165500625-d0e7065e-9cca-4b96-a6b2-36672e5a2f19.png)
+
+
+Końcowe słowa
+-
+Dziękuję za poświęcienie czasu na przeczytanie i zapoznanie się z moją pracą. Jestem z niej zadowolony,
+jako że był to jeden z większych projektów nad którymi dane mi było pracować do tej pory. </br> </br>
+Czy teraz zrobiłbym niektóre rzeczy inaczej? Oczywiście. </br>
+Traktuję to jednak jako kolejny krok przy tworzeniu gier/aplikacji w silniku Unity. </br> </br>
+Życzę Tobie miłego dnia i do zobaczenia następnym razem.
 
 
 
